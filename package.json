@@ -1,0 +1,19 @@
+{
+  "name": "smart-cart",
+  "version": "0.0.1",
+  "description": "A lightweight cart model.",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "repository": "https://github.com/FlareMind/smart-cart.git",
+  "author": "FlareMind <info@flaremind.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.48",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.7.1"
+  }
+}
