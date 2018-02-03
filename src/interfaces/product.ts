@@ -1,10 +1,23 @@
 import {IProductData} from "./product-data";
+import {IWeightUnit} from "./weight-unit";
+import {ICurrency} from "./currency";
 
 export interface IProduct {
 
-    id : number;                    // ID for the placement in the cart
+    getId(): number;
 
-    getData() : IProductData;       // Get the product data
-    update() : boolean              // Update this product
-    remove() : boolean              // Remove this product
+    /*
+     * CHANGE PRODUCT
+     */
+    updateQuantity(quantity: number): void;
+    remove(): boolean;
+
+    /*
+     * DATA
+     */
+    getData(): IProductData;
+    getWeight(weightUnit: IWeightUnit): number;
+    getTotalPrice(vat: boolean): number;
+    getCurrency(): ICurrency;
+    getVat(): number;
 }

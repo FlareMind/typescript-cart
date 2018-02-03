@@ -1,5 +1,3 @@
-import 'core-js/es6/object';
-
 export interface IWeightUnit {
     unitName: string;                                   // Name of the unit
     label: string;                                      // Label for the unit
@@ -18,17 +16,16 @@ export abstract class WeightUnit implements IWeightUnit {
     abstract unitName: string;
     abstract label: string;
 
-    defaultOptions : IWeightOptions =  {
-        decimals: 2
-    };
-
     abstract convertToKilogram(weight: number): number;
     abstract convertFromKilogram(weight: number): number;
 
     format(weight: number, unit: IWeightUnit, options?: IWeightOptions): string {
 
         // Create a options object
-        options = Object.assign({}, this.defaultOptions, options);
+        options = options || {};
+        options = {
+            decimals: options.decimals || 2
+        };
 
         return this.convertFromKilogram(unit.convertToKilogram(weight)).toFixed(options.decimals) + ' ' + this.label;
     }

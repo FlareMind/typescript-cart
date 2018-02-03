@@ -20,8 +20,5 @@
     "ts-node": "^4.1.0",
     "typescript": "^2.7.1"
   },
-  "dependencies": {
-    "@types/core-js": "^0.9.46",
-    "core-js": "^2.5.3"
-  }
+  "dependencies": {}
 }
