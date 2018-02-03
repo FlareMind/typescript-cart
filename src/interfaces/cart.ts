@@ -7,10 +7,10 @@ export interface ICart {
     /*
      * PRODUCT METHODS
      */
-    getContents() : IProduct[]
-    addItem(product : (IProduct | IProduct[])) : void
-    updateItem(id : number, ) : boolean
-    removeItem(id : number) : boolean
+    getContents() : IProduct[];
+    addItem(product : (IProduct | IProduct[])) : void;
+    updateItem(id : number, ) : boolean;
+    removeItem(id : number) : boolean;
     clear() : void;
 
     /*
@@ -27,4 +27,10 @@ export interface ICart {
     getWeight() : number;
     getUnitSystem() : IWeightUnit;
     getDefaultUnitSystem() : IWeightUnit;
+
+    /*
+     * IO
+     */
+    exportCart() : string;
+    importCArt(data : string) : boolean;
 }

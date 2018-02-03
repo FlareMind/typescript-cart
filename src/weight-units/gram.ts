@@ -1,8 +1,8 @@
 import {WeightUnit} from "../interfaces/weight-unit";
 
 export class Gram extends WeightUnit {
-    unitName: string = 'Gram';
-    label: string = 'g';
+    readonly unitName: string = 'Gram';
+    readonly label: string = 'g';
 
     convertToKilogram(weight: number): number {
         return weight/1000;
@@ -11,5 +11,4 @@ export class Gram extends WeightUnit {
     convertFromKilogram(weight: number): number {
         return weight*1000;
     }
-
 }
