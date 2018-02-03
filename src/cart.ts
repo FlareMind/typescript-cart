@@ -7,6 +7,7 @@ import {Currencies} from "./currencies/currencies";
 import {WeightUnits} from "./weight-units/weight-units";
 import {IConvertObject, ICurrencyConverter} from "./interfaces/currency-converter";
 import {IAddProduct} from "./interfaces/product-data";
+import {Product} from "./product";
 
 
 export class Cart implements ICart {
@@ -58,10 +59,15 @@ export class Cart implements ICart {
      * @param {IAddProduct | IAddProduct[]} product A single product or a list of products to add to the content.
      */
     addItem(product: IAddProduct | IAddProduct[]): void {
-        if (Cart.isAddProduct(product)) {
-            // TODO make constructor for the product first
-        } else {
+        if (!Cart.isAddProduct(product)) {
             product.forEach(item => this.addItem(item));
+            return;
+        }
+
+        if (this.config.stackAddedProducts) {
+            // TODO implement add with stacking
+        } else {
+            this.content.push(new Product(this.content.length, product, this));
         }
     }
 

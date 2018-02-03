@@ -23,6 +23,11 @@ export interface IProductData {
     additionPrice: number;               // Price for the additions
     vat: number;                         // Percentage of vat
     vatInPrice: boolean;                 // True if the vat is included in the prices
+
+    /*
+     * EXTRA
+     */
+    extra: any;
 }
 
 export interface IAddProduct {
@@ -32,4 +37,5 @@ export interface IAddProduct {
     basePrice: number;
     additionPrice?: number;
     vat?: number;
+    extra?: any;
 }

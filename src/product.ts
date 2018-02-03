@@ -1,5 +1,5 @@
 import {IProduct} from "./interfaces/product";
-import {IProductData} from "./interfaces/product-data";
+import {IAddProduct, IProductData} from "./interfaces/product-data";
 import {IWeightUnit} from "./interfaces/weight-unit";
 import {ICurrency} from "./interfaces/currency";
 import {ICart} from "./interfaces/cart";
@@ -9,7 +9,7 @@ export class Product implements IProduct {
     private cart: ICart;
     private productData: IProductData;
 
-    constructor() {
+    constructor(id:number, data: IAddProduct, cart: ICart) {
 
     }
 
