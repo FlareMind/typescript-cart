@@ -1,3 +1,4 @@
+import isEqual from 'lodash-es/isEqual'
 import {ICart} from "./interfaces/cart";
 import {IWeightUnit} from "./interfaces/weight-unit";
 import {ICurrency} from "./interfaces/currency";
@@ -9,6 +10,7 @@ import {IConvertObject, ICurrencyConverter} from "./interfaces/currency-converte
 import {IAddProduct} from "./interfaces/product-data";
 import {Product} from "./product";
 
+import 'lodash.isequal'
 
 export class Cart implements ICart {
     private config: ICartConfig;
@@ -59,16 +61,53 @@ export class Cart implements ICart {
      * @param {IAddProduct | IAddProduct[]} product A single product or a list of products to add to the content.
      */
     addItem(product: IAddProduct | IAddProduct[]): void {
+
+        // If multiple products is added, then add the one by one
         if (!Cart.isAddProduct(product)) {
             product.forEach(item => this.addItem(item));
             return;
         }
 
+        // If the products should be stacked then try to add it to a previous item
         if (this.config.stackAddedProducts) {
-            // TODO implement add with stacking
-        } else {
-            this.content.push(new Product(this.content.length, product, this));
+
+            // Get the index. If it is found then add it to the existing product.
+            let index = this.findIndex(product);
+            if (index !== -1) {
+
+                // Update the quantity
+                this.content[index].updateQuantity(product.quantity || 1, true);
+                return;
+            }
         }
+
+        // Add a completely new product.
+        this.content.push(new Product(this.content.length, product, this));
+    }
+
+    /**
+     * Search for a product in the cart given an IAddProduct.
+     * @param {IAddProduct} product The product to find in the cart.
+     * @returns {number} The index of the product if it exist, otherwise -1.
+     */
+    private findIndex(product: IAddProduct): number {
+        let index = -1;
+
+        this.content.some((item, itemIndex) => {
+            let data = item.getData();
+
+            if (data.sku === product.sku && data.basePrice === product.basePrice
+                && data.additionPrice === product.additionPrice && data.weight === product.weight
+                && data.vat === product.vat && isEqual(data.extra, product.extra)) {
+
+                index = itemIndex;
+                return true;
+            }
+
+            return false;
+        });
+
+        return index;
     }
 
     private static isAddProduct(product: IAddProduct | IAddProduct[]): product is IAddProduct {
@@ -108,10 +147,18 @@ export class Cart implements ICart {
         return false;
     }
 
+    /**
+     * Clear the cart from all items.
+     */
     clear(): void {
         this.content.splice(0, this.content.length);
     }
 
+    /**
+     * Get the total price of the cart. The price is given in the currency set in the cart.
+     * @param {boolean} vat If VAT should be included in the price.
+     * @returns {number}
+     */
     getTotalPrice(vat=true): number {
         return this.currencyConverter.convert(<IConvertObject>{
             amount: this.content.map(product => product.getTotalPrice(vat)).reduce((a, b) => a + b, 0),
@@ -120,6 +167,10 @@ export class Cart implements ICart {
         });
     }
 
+    /**
+     * Get the total VAT of the products in the cart. Given in the currency set in the cart.
+     * @returns {number} The VAT of all products.
+     */
     getVat(): number {
         return this.currencyConverter.convert(<IConvertObject>{
             amount: this.content.map(product => product.getVat()).reduce((a, b) => a + b, 0),
@@ -128,32 +179,60 @@ export class Cart implements ICart {
         });
     }
 
+    /**
+     * The currency of the cart.
+     * @returns {ICurrency} The currency of the cart.
+     */
     getCurrency(): ICurrency {
         return this.currency;
     }
 
+    /**
+     * Set the currency of the cart.
+     * @param {ICurrency} currency The new currency to use in the cart.
+     */
     setCurrency(currency: ICurrency) : void {
         this.currency = currency;
     }
 
+    /**
+     * Get the default currency of the cart. This is the currency the cart expects new items to be given in.
+     * @returns {ICurrency} The default currency of the cart.
+     */
     getDefaultCurrency(): ICurrency {
         return this.config.defaultCurrency;
     }
 
+    /**
+     * Get the weight of the cart.
+     * @returns {number}
+     */
     getWeight(): number {
         return this.content
             .map(product => product.getWeight(this.weightUnit))
             .reduce((a, b) => a + b, 0);
     }
 
+    /**
+     * Get the weight unit system for this cart.
+     * @returns {IWeightUnit} The weight unit system (e.g. kilogram).
+     */
     getWeightUnitSystem(): IWeightUnit {
         return this.weightUnit;
     }
 
+    /**
+     * Set the weight unit system for this cart.
+     * @param {IWeightUnit} weightUnit The new weight unit system.
+     */
     setWeightUnitSystem(weightUnit: IWeightUnit) : void {
         this.weightUnit = weightUnit;
     }
 
+    /**
+     * Get the default unit system of this cart. This is the unit system the cart expects new products to be given in.
+     * @returns {IWeightUnit}
+     */
     getDefaultUnitSystem(): IWeightUnit {
         return this.config.defaultWeightUnit;
     }
@@ -165,5 +244,5 @@ export class Cart implements ICart {
     importCart(data: string): boolean {
         throw Error('Not Implemented');
     }
-    
+
 }

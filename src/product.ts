@@ -10,7 +10,7 @@ export class Product implements IProduct {
     private productData: IProductData;
 
     constructor(id:number, data: IAddProduct, cart: ICart) {
-
+        // TODO implement constructor for product.
     }
 
     getId(): number {
@@ -21,7 +21,16 @@ export class Product implements IProduct {
         return this.productData;
     }
 
-    updateQuantity(quantity: number): void {
+    getQuantity(): number {
+        return this.getData().quantity;
+    }
+
+    updateQuantity(quantity: number, add = false): void {
+        if (add) {
+            this.getData().quantity += quantity;
+            return;
+        }
+
         this.getData().quantity = quantity;
     }
 

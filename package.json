@@ -20,5 +20,8 @@
     "ts-node": "^4.1.0",
     "typescript": "^2.7.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@types/lodash-es": "^4.17.0",
+    "lodash-es": "^4.17.5"
+  }
 }

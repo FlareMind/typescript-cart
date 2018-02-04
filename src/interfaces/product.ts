@@ -9,7 +9,8 @@ export interface IProduct {
     /*
      * CHANGE PRODUCT
      */
-    updateQuantity(quantity: number): void;
+    getQuantity(): number;
+    updateQuantity(quantity: number, add?: boolean): void;
     remove(): boolean;
 
     /*
