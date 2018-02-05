@@ -2,8 +2,14 @@ import {IProduct} from "./product";
 import {ICurrency} from "./currency";
 import {IWeightUnit} from "./weight-unit";
 import {IAddProduct} from "./product-data";
+import {ICartConfig} from "./cart-config";
 
 export interface ICart {
+
+    /*
+     * META
+     */
+    getConfig(): ICartConfig;
 
     /*
      * PRODUCT METHODS
@@ -12,12 +18,6 @@ export interface ICart {
     get(id: number): IProduct | null;
     addItem(product: IAddProduct | IAddProduct[]): void;
     updateQuantityItem(id: number, quantity: number): boolean;
-
-    /**
-     * Remove an item from the cart.
-     * @param {number} id The id of the product
-     * @return {boolean} Returns true if successful, otherwise false.
-     */
     removeItem(id: number): boolean;
     clear(): void;
 

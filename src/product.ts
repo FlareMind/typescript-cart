@@ -10,7 +10,26 @@ export class Product implements IProduct {
     private productData: IProductData;
 
     constructor(id:number, data: IAddProduct, cart: ICart) {
-        // TODO implement constructor for product.
+
+        this.id = id;
+        this.cart = cart;
+
+        // Set product data
+        this.productData = {
+            sku: data.sku,
+            quantity: data.quantity || 1,
+
+            weightUnitSystem: cart.getDefaultUnitSystem(),
+            weight: data.weight || 0,
+
+            currency: cart.getDefaultCurrency(),
+            basePrice: data.basePrice,
+            additionPrice: data.additionPrice || 0,
+            vat: data.vat || cart.getConfig().defaultVat,
+            vatInPrice: cart.getConfig().vatInPrice,
+
+            extra: data.extra || {}
+        };
     }
 
     getId(): number {

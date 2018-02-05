@@ -39,6 +39,14 @@ export class Cart implements ICart {
     }
 
     /**
+     * Get the cart config.
+     * @returns {ICartConfig} The cart config.
+     */
+    getConfig(): ICartConfig {
+        return this.config;
+    }
+
+    /**
      * Get the products in the cart.
      * @return {IProduct[]} The products in the cart.
      */
