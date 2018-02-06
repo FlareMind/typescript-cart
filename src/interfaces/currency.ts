@@ -3,6 +3,8 @@ export interface ICurrency {
     prefix: string | null;      // The prefix of the currency (e.g. $, £ or €)
     suffix: string;             // The suffix of the currency (e.g. EUR, SEK, USD or GBP)
 
+    getCode(): string;
+
     format(amount: number, options?: ICurrencyOptions) : string;       // Format a price
 }
 
@@ -27,6 +29,10 @@ export abstract class Currency implements ICurrency {
 
         return options.preferPrefix && this.prefix !== null ? this.prefix + amount.toFixed(options.decimals)
             : amount.toFixed(options.decimals) + ' ' + this.suffix;
+    }
+
+    getCode(): string {
+        return this.suffix;
     }
 
     toString() : string {

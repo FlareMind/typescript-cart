@@ -10,7 +10,7 @@
   "private": false,
   "scripts": {
     "build": "tsc -p ./tsconfig.json",
-    "test": "mocha -r ts-node/register test/test-*.ts"
+    "test": "mocha -r ts-node/register test/observable.ts test/test-*.ts"
   },
   "devDependencies": {
     "@types/chai": "^4.1.2",
@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@types/lodash-es": "^4.17.0",
-    "lodash-es": "^4.17.5"
+    "lodash-es": "^4.17.5",
+    "shallow-equal-object": "^1.1.1"
   }
 }

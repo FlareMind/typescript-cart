@@ -1,4 +1,4 @@
-import isEqual from 'lodash-es/isEqual'
+import {shallowEqual} from 'shallow-equal-object'
 import {ICart} from "./interfaces/cart";
 import {IWeightUnit} from "./interfaces/weight-unit";
 import {ICurrency} from "./interfaces/currency";
@@ -10,8 +10,6 @@ import {IConvertObject, ICurrencyConverter} from "./interfaces/currency-converte
 import {IAddProduct} from "./interfaces/product-data";
 import {Product} from "./product";
 
-import 'lodash.isequal'
-
 export class Cart implements ICart {
     private config: ICartConfig;
     private currencyConverter: ICurrencyConverter;
@@ -20,7 +18,7 @@ export class Cart implements ICart {
     private content: IProduct[] = [];
 
 
-    constructor(currencyConverter: ICurrencyConverter, config: ICartOptionalConfig) {
+    constructor(currencyConverter: ICurrencyConverter, config?: ICartOptionalConfig) {
 
         // Set config object
         config = config || {};
@@ -106,7 +104,7 @@ export class Cart implements ICart {
 
             if (data.sku === product.sku && data.basePrice === product.basePrice
                 && data.additionPrice === product.additionPrice && data.weight === product.weight
-                && data.vat === product.vat && isEqual(data.extra, product.extra)) {
+                && data.vat === product.vat && shallowEqual(data.extra, product.extra)) {
 
                 index = itemIndex;
                 return true;
@@ -167,7 +165,7 @@ export class Cart implements ICart {
      * @param {boolean} vat If VAT should be included in the price.
      * @returns {number}
      */
-    getTotalPrice(vat=true): number {
+    getTotalPrice(vat=true): number | null {
         return this.currencyConverter.convert(<IConvertObject>{
             amount: this.content.map(product => product.getTotalPrice(vat)).reduce((a, b) => a + b, 0),
             from: this.getDefaultCurrency(),
@@ -179,7 +177,7 @@ export class Cart implements ICart {
      * Get the total VAT of the products in the cart. Given in the currency set in the cart.
      * @returns {number} The VAT of all products.
      */
-    getVat(): number {
+    getVat(): number | null {
         return this.currencyConverter.convert(<IConvertObject>{
             amount: this.content.map(product => product.getVat()).reduce((a, b) => a + b, 0),
             from: this.getDefaultCurrency(),

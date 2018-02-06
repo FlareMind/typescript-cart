@@ -24,8 +24,8 @@ export interface ICart {
     /*
      * PRICE, CURRENCY AND VAT METHODS
      */
-    getTotalPrice(vat: boolean): number;
-    getVat(): number;
+    getTotalPrice(vat: boolean): number | null;
+    getVat(): number | null;
     getCurrency(): ICurrency;
     setCurrency(currency: ICurrency): void;
     getDefaultCurrency(): ICurrency;

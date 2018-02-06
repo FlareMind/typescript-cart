@@ -1,7 +1,7 @@
 import {ICurrency} from "./currency";
 
 export interface ICurrencyConverter {
-    convert(convertObject: IConvertObject) : number;
+    convert(convertObject: IConvertObject) : number | null;
 }
 
 export interface IConvertObject {
