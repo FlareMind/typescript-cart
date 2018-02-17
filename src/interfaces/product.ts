@@ -21,4 +21,5 @@ export interface IProduct {
     getTotalPrice(vat: boolean): number;
     getCurrency(): ICurrency;
     getVat(): number;
+    getExtra(): any;
 }

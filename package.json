@@ -23,6 +23,7 @@
   "dependencies": {
     "@types/lodash-es": "^4.17.0",
     "lodash-es": "^4.17.5",
-    "shallow-equal-object": "^1.1.1"
+    "shallow-equal-object": "^1.1.1",
+    "typescript-observable": "^1.0.14"
   }
 }

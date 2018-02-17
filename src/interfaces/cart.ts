@@ -3,6 +3,7 @@ import {ICurrency} from "./currency";
 import {IWeightUnit} from "./weight-unit";
 import {IAddProduct} from "./product-data";
 import {ICartConfig} from "./cart-config";
+import {ICurrencyConverter} from "./currency-converter";
 
 export interface ICart {
 
@@ -14,20 +15,22 @@ export interface ICart {
     /*
      * PRODUCT METHODS
      */
+    count(): number;
     getContents(): IProduct[];
     get(id: number): IProduct | null;
-    addItem(product: IAddProduct | IAddProduct[]): void;
-    updateQuantityItem(id: number, quantity: number): boolean;
+    addItem(product: IAddProduct | IAddProduct[]): ICart;
+    updateItemQuantity(id: number, quantity: number): boolean;
     removeItem(id: number): boolean;
-    clear(): void;
+    clear(): ICart;
 
     /*
      * PRICE, CURRENCY AND VAT METHODS
      */
+    setCurrencyConverter(currencyConverter: ICurrencyConverter): ICart;
     getTotalPrice(vat: boolean): number | null;
     getVat(): number | null;
     getCurrency(): ICurrency;
-    setCurrency(currency: ICurrency): void;
+    setCurrency(currency: ICurrency): ICart;
     getDefaultCurrency(): ICurrency;
 
     /*
@@ -35,7 +38,7 @@ export interface ICart {
      */
     getWeight() : number;
     getWeightUnitSystem(): IWeightUnit;
-    setWeightUnitSystem(weightUnit: IWeightUnit): void;
+    setWeightUnitSystem(weightUnit: IWeightUnit): ICart;
     getDefaultUnitSystem(): IWeightUnit;
 
     /*

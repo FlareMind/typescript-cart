@@ -1,4 +1,5 @@
 import {shallowEqual} from 'shallow-equal-object'
+import {Observable} from "typescript-observable";
 import {ICart} from "./interfaces/cart";
 import {IWeightUnit} from "./interfaces/weight-unit";
 import {ICurrency} from "./interfaces/currency";
@@ -9,8 +10,10 @@ import {WeightUnits} from "./weight-units/weight-units";
 import {IConvertObject, ICurrencyConverter} from "./interfaces/currency-converter";
 import {IAddProduct} from "./interfaces/product-data";
 import {Product} from "./product";
+import CartEvent from "./cart-events"
+import {CurrencyConverter} from "./currency-converter";
 
-export class Cart implements ICart {
+export class Cart extends Observable implements ICart {
     private config: ICartConfig;
     private currencyConverter: ICurrencyConverter;
     private currency: ICurrency;
@@ -18,7 +21,8 @@ export class Cart implements ICart {
     private content: IProduct[] = [];
 
 
-    constructor(currencyConverter: ICurrencyConverter, config?: ICartOptionalConfig) {
+    constructor(config?: ICartOptionalConfig, currencyConverter?: ICurrencyConverter) {
+        super();
 
         // Set config object
         config = config || {};
@@ -27,10 +31,11 @@ export class Cart implements ICart {
             defaultWeightUnit: config.defaultWeightUnit || WeightUnits.KILOGRAM,
             defaultVat: config.defaultVat || 0.25,
             vatInPrice: config.vatInPrice !== false,
-            stackAddedProducts: config.stackAddedProducts !== false
+            stackAddedProducts: config.stackAddedProducts !== false,
+
         };
 
-        this.currencyConverter = currencyConverter;
+        this.currencyConverter = currencyConverter || new CurrencyConverter({});
 
         this.currency = this.config.defaultCurrency;
         this.weightUnit = this.config.defaultWeightUnit;
@@ -43,6 +48,16 @@ export class Cart implements ICart {
     getConfig(): ICartConfig {
         return this.config;
     }
+
+    /**
+     * Get the number of items in the cart.
+     * @returns {number} The number of products in the cart.
+     */
+    count(): number {
+        return this.content
+            .map(item => item.getQuantity())
+            .reduce((a, b) => a + b, 0);
+    };
 
     /**
      * Get the products in the cart.
@@ -65,14 +80,22 @@ export class Cart implements ICart {
     /**
      * Add products to the cart.
      * @param {IAddProduct | IAddProduct[]} product A single product or a list of products to add to the content.
+     * @returns {ICart} Chaining this
      */
-    addItem(product: IAddProduct | IAddProduct[]): void {
+    addItem(product: IAddProduct | IAddProduct[]): ICart {
 
         // If multiple products is added, then add the one by one
         if (!Cart.isAddProduct(product)) {
             product.forEach(item => this.addItem(item));
-            return;
+            return this;
         }
+
+        // Add missing attributes
+        product.quantity = product.quantity || 1;
+        product.weight = product.weight || 0;
+        product.additionPrice = product.additionPrice || 0;
+        product.vat = product.vat || this.getConfig().defaultVat;
+        product.extra = product.extra || {};
 
         // If the products should be stacked then try to add it to a previous item
         if (this.config.stackAddedProducts) {
@@ -82,13 +105,27 @@ export class Cart implements ICart {
             if (index !== -1) {
 
                 // Update the quantity
-                this.content[index].updateQuantity(product.quantity || 1, true);
-                return;
+                this.content[index].updateQuantity(product.quantity, true);
+
+                // Notify observers
+                this.notify(CartEvent.PRODUCT_QUANTITY_CHANGED, {
+                    product: this.content[index]
+                });
+
+                return this;
             }
         }
 
         // Add a completely new product.
-        this.content.push(new Product(this.content.length, product, this));
+        let newProduct = new Product(this.content.length, product, this);
+        this.content.push(newProduct);
+
+        // Notify observers
+        this.notify(CartEvent.PRODUCT_ADD, {
+            product: newProduct
+        });
+
+        return this;
     }
 
     /**
@@ -126,11 +163,16 @@ export class Cart implements ICart {
      * @param {number} quantity
      * @return {boolean}
      */
-    updateQuantityItem(id: number, quantity: number): boolean {
+    updateItemQuantity(id: number, quantity: number): boolean {
         let index = this.content.map(product => product.getId()).indexOf(id);
 
         if (index !== -1) {
             this.content[index].updateQuantity(quantity);
+
+            this.notify(CartEvent.PRODUCT_QUANTITY_CHANGED, {
+                product: this.content[index]
+            });
+
             return true;
         }
 
@@ -146,7 +188,15 @@ export class Cart implements ICart {
         let index = this.content.map(product => product.getId()).indexOf(id);
 
         if (index !== -1) {
+
+            let deletedProduct = this.content[index];
             this.content.splice(index, 1);
+
+            // Notify observers
+            this.notify(CartEvent.PRODUCT_REMOVE, {
+                product: deletedProduct
+            });
+
             return true;
         }
 
@@ -155,9 +205,24 @@ export class Cart implements ICart {
 
     /**
      * Clear the cart from all items.
+     * @returns {ICart} Chaining this
      */
-    clear(): void {
+    clear(): ICart {
         this.content.splice(0, this.content.length);
+
+        this.notify(CartEvent.CART_CLEAR, {});
+
+        return this;
+    }
+
+    /**
+     * Set the currency converter of this
+     * @param {ICurrencyConverter} currencyConverter
+     * @returns {ICart} Chaining this
+     */
+    setCurrencyConverter(currencyConverter: ICurrencyConverter): ICart {
+        this.currencyConverter = currencyConverter;
+        return this;
     }
 
     /**
@@ -196,9 +261,11 @@ export class Cart implements ICart {
     /**
      * Set the currency of the cart.
      * @param {ICurrency} currency The new currency to use in the cart.
+     * @returns {ICart} Chained this
      */
-    setCurrency(currency: ICurrency) : void {
+    setCurrency(currency: ICurrency) : ICart {
         this.currency = currency;
+        return this;
     }
 
     /**
@@ -230,9 +297,11 @@ export class Cart implements ICart {
     /**
      * Set the weight unit system for this cart.
      * @param {IWeightUnit} weightUnit The new weight unit system.
+     * @returns {ICart} Chaining this
      */
-    setWeightUnitSystem(weightUnit: IWeightUnit) : void {
+    setWeightUnitSystem(weightUnit: IWeightUnit) : ICart {
         this.weightUnit = weightUnit;
+        return this;
     }
 
     /**
