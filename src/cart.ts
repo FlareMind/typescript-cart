@@ -1,6 +1,5 @@
-import {shallowEqual} from 'shallow-equal-object'
 import {Observable} from "typescript-observable";
-import {ICart} from "./interfaces/cart";
+import {ICart, IExportedCart} from "./interfaces/cart";
 import {IWeightUnit} from "./interfaces/weight-unit";
 import {ICurrency} from "./interfaces/currency";
 import {IProduct} from "./interfaces/product";
@@ -12,6 +11,7 @@ import {IAddProduct} from "./interfaces/product-data";
 import {Product} from "./product";
 import CartEvent from "./cart-events"
 import {CurrencyConverter} from "./currency-converter";
+import deepEqual = require("deep-equal");
 
 export class Cart extends Observable implements ICart {
     private config: ICartConfig;
@@ -31,8 +31,7 @@ export class Cart extends Observable implements ICart {
             defaultWeightUnit: config.defaultWeightUnit || WeightUnits.KILOGRAM,
             defaultVat: config.defaultVat || 0.25,
             vatInPrice: config.vatInPrice !== false,
-            stackAddedProducts: config.stackAddedProducts !== false,
-
+            stackAddedProducts: config.stackAddedProducts !== false
         };
 
         this.currencyConverter = currencyConverter || new CurrencyConverter({});
@@ -78,19 +77,30 @@ export class Cart extends Observable implements ICart {
     }
 
     /**
-     * Add products to the cart.
-     * @param {IAddProduct | IAddProduct[]} product A single product or a list of products to add to the content.
-     * @returns {ICart} Chaining this
+     * Add a single product to the cart
+     * @param {IAddProduct} product The product to add
+     * @returns {IProduct} The added product
      */
-    addItem(product: IAddProduct | IAddProduct[]): ICart {
+    addItem(product: IAddProduct): IProduct;
+
+    /**
+     * Add multiple products
+     * @param {IAddProduct[]} product The products to add in a list
+     * @returns {IProduct[]} The added products in a list
+     */
+    addItem(product: IAddProduct[]): IProduct[];
+    addItem(product: IAddProduct | IAddProduct[]): IProduct | IProduct[] {
 
         // If multiple products is added, then add the one by one
         if (!Cart.isAddProduct(product)) {
-            product.forEach(item => this.addItem(item));
-            return this;
+            let products: IProduct[] = [];
+            product.forEach(item => {
+                products.push(this.addItem(item));
+            });
+            return products;
         }
 
-        // Add missing attributes
+        // Add possible missing attributes (needed to find the product)
         product.quantity = product.quantity || 1;
         product.weight = product.weight || 0;
         product.additionPrice = product.additionPrice || 0;
@@ -105,14 +115,14 @@ export class Cart extends Observable implements ICart {
             if (index !== -1) {
 
                 // Update the quantity
-                this.content[index].updateQuantity(product.quantity, true);
+                this.content[index].setQuantity(product.quantity, true);
 
                 // Notify observers
                 this.notify(CartEvent.PRODUCT_QUANTITY_CHANGED, {
                     product: this.content[index]
                 });
 
-                return this;
+                return this.content[index];
             }
         }
 
@@ -125,7 +135,7 @@ export class Cart extends Observable implements ICart {
             product: newProduct
         });
 
-        return this;
+        return newProduct;
     }
 
     /**
@@ -141,7 +151,7 @@ export class Cart extends Observable implements ICart {
 
             if (data.sku === product.sku && data.basePrice === product.basePrice
                 && data.additionPrice === product.additionPrice && data.weight === product.weight
-                && data.vat === product.vat && shallowEqual(data.extra, product.extra)) {
+                && data.vat === product.vat && deepEqual(data.extra, product.extra)) {
 
                 index = itemIndex;
                 return true;
@@ -167,7 +177,7 @@ export class Cart extends Observable implements ICart {
         let index = this.content.map(product => product.getId()).indexOf(id);
 
         if (index !== -1) {
-            this.content[index].updateQuantity(quantity);
+            this.content[index].setQuantity(quantity);
 
             this.notify(CartEvent.PRODUCT_QUANTITY_CHANGED, {
                 product: this.content[index]
@@ -312,12 +322,45 @@ export class Cart extends Observable implements ICart {
         return this.config.defaultWeightUnit;
     }
 
+    /**
+     * Export the cart to a JSON string.
+     * @returns {string} The JSON string
+     */
     exportCart(): string {
-        throw Error('Not Implemented');
+        let exportedCart: IExportedCart = {
+            config: this.getConfig(),
+            products: this.content.map(product => (<IAddProduct>{
+                sku: product.getData().sku,
+                basePrice: product.getData().basePrice,
+                vat: product.getData().vat,
+                additionPrice: product.getData().additionPrice,
+                quantity: product.getData().quantity,
+                weight: product.getData().weight,
+                extra: product.getData().extra
+            }))
+        };
+
+        return JSON.stringify(exportedCart);
     }
 
-    importCart(data: string): boolean {
-        throw Error('Not Implemented');
+    /**
+     * Import the cart from a JSON string.
+     * @param {string} data The JSON string to import.
+     * @returns {ICart | null} The imported cart if the import was successful. Otherwise null.
+     */
+    static importCart(data: string): ICart | null {
+        let decodedJson: any = JSON.parse(data);
+
+        if (Cart.isExportedCart(decodedJson)) {
+            let cart: ICart = new Cart((<IExportedCart> decodedJson).config);
+            cart.addItem((<IExportedCart> decodedJson).products);
+            return cart;
+        }
+
+        return null;
     }
 
+    private static isExportedCart(obj: any): obj is IExportedCart {
+        return obj.hasOwnProperty('config') && obj.hasOwnProperty('products');
+    }
 }

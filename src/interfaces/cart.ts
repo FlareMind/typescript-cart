@@ -18,7 +18,8 @@ export interface ICart {
     count(): number;
     getContents(): IProduct[];
     get(id: number): IProduct | null;
-    addItem(product: IAddProduct | IAddProduct[]): ICart;
+    addItem(product: IAddProduct): IProduct;
+    addItem(product: IAddProduct[]): IProduct[];
     updateItemQuantity(id: number, quantity: number): boolean;
     removeItem(id: number): boolean;
     clear(): ICart;
@@ -27,7 +28,7 @@ export interface ICart {
      * PRICE, CURRENCY AND VAT METHODS
      */
     setCurrencyConverter(currencyConverter: ICurrencyConverter): ICart;
-    getTotalPrice(vat: boolean): number | null;
+    getTotalPrice(vat?: boolean): number | null;
     getVat(): number | null;
     getCurrency(): ICurrency;
     setCurrency(currency: ICurrency): ICart;
@@ -45,5 +46,9 @@ export interface ICart {
      * IO
      */
     exportCart(): string;
-    importCart(data: string): boolean;
+}
+
+export interface IExportedCart {
+    config: ICartConfig;
+    products: IAddProduct[];
 }

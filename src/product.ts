@@ -61,11 +61,12 @@ export class Product implements IProduct {
      * Set the quantity.
      * @param {number} quantity The new quantity.
      * @param {boolean} add If true the quantity is added, if false the new quantity will overwrite the old.
+     * @returns {IProduct} Chaining this
      */
-    updateQuantity(quantity: number, add = false): void {
+    setQuantity(quantity: number, add = false): IProduct {
         if (add) {
             this.getData().quantity += quantity;
-            return;
+            return this;
         }
 
         this.getData().quantity = quantity;
@@ -74,6 +75,8 @@ export class Product implements IProduct {
         if (this.getQuantity() <= 0) {
             this.remove();
         }
+
+        return this;
     }
 
     /**
@@ -108,7 +111,7 @@ export class Product implements IProduct {
 
         // If the price is already saved in the correct format
         if (this.getData().vatInPrice === vat) {
-            return totalPrice;
+            return totalPrice * this.getQuantity();
         }
 
         // VAT should be added
@@ -137,7 +140,7 @@ export class Product implements IProduct {
 
         // VAT is in the total price
         if (this.getData().vatInPrice) {
-            return this.getData().vat * totalPrice / (1 + this.getData().vat);
+            return this.getData().vat * totalPrice / (1 + this.getData().vat) * this.getQuantity();
         }
 
         // VAT is not in the price
