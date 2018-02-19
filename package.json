@@ -1,10 +1,10 @@
 {
   "name": "typescript-cart",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight cart model.",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
-  "repository": "https://github.com/FlareMind/smart-cart.git",
+  "repository": "https://github.com/FlareMind/typescript-cart.git",
   "author": "FlareMind <info@flaremind.com>",
   "license": "MIT",
   "private": false,
