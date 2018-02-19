@@ -1,4 +1,4 @@
-[smart-cart](../README.md) > [Pound](../classes/pound.md)
+[typescript-cart](../README.md) > [Pound](../classes/pound.md)
 
 
 
@@ -50,7 +50,7 @@
 
 *Overrides [WeightUnit](weightunit.md).[label](weightunit.md#label)*
 
-*Defined in [weight-units/pound.ts:5](https://github.com/FlareMind/smart-cart/blob/a83b470/src/weight-units/pound.ts#L5)*
+*Defined in [weight-units/pound.ts:5](https://github.com/FlareMind/typescript-cart/blob/0489372/src/weight-units/pound.ts#L5)*
 
 
 
@@ -68,7 +68,7 @@ ___
 
 *Overrides [WeightUnit](weightunit.md).[unitName](weightunit.md#unitname)*
 
-*Defined in [weight-units/pound.ts:4](https://github.com/FlareMind/smart-cart/blob/a83b470/src/weight-units/pound.ts#L4)*
+*Defined in [weight-units/pound.ts:4](https://github.com/FlareMind/typescript-cart/blob/0489372/src/weight-units/pound.ts#L4)*
 
 
 
@@ -90,7 +90,7 @@ ___
 
 *Overrides [WeightUnit](weightunit.md).[convertFromKilogram](weightunit.md#convertfromkilogram)*
 
-*Defined in [weight-units/pound.ts:11](https://github.com/FlareMind/smart-cart/blob/a83b470/src/weight-units/pound.ts#L11)*
+*Defined in [weight-units/pound.ts:11](https://github.com/FlareMind/typescript-cart/blob/0489372/src/weight-units/pound.ts#L11)*
 
 
 
@@ -124,7 +124,7 @@ ___
 
 *Overrides [WeightUnit](weightunit.md).[convertToKilogram](weightunit.md#converttokilogram)*
 
-*Defined in [weight-units/pound.ts:7](https://github.com/FlareMind/smart-cart/blob/a83b470/src/weight-units/pound.ts#L7)*
+*Defined in [weight-units/pound.ts:7](https://github.com/FlareMind/typescript-cart/blob/0489372/src/weight-units/pound.ts#L7)*
 
 
 
@@ -158,7 +158,7 @@ ___
 
 *Inherited from [WeightUnit](weightunit.md).[format](weightunit.md#format)*
 
-*Defined in [interfaces/weight-unit.ts:22](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/weight-unit.ts#L22)*
+*Defined in [interfaces/weight-unit.ts:22](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/weight-unit.ts#L22)*
 
 
 
@@ -192,7 +192,7 @@ ___
 
 *Inherited from [WeightUnit](weightunit.md).[toString](weightunit.md#tostring)*
 
-*Defined in [interfaces/weight-unit.ts:33](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/weight-unit.ts#L33)*
+*Defined in [interfaces/weight-unit.ts:33](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/weight-unit.ts#L33)*
 
 
 

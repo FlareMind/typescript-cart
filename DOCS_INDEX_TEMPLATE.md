@@ -1,1 +1,1 @@
-# smart-cart documentation
+# typescript-cart documentation

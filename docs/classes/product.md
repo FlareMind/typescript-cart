@@ -1,4 +1,4 @@
-[smart-cart](../README.md) > [Product](../classes/product.md)
+[typescript-cart](../README.md) > [Product](../classes/product.md)
 
 
 
@@ -45,7 +45,7 @@
 ### ⊕ **new Product**(id: *`number`*, data: *[IAddProduct](../interfaces/iaddproduct.md)*, cart: *[ICart](../interfaces/icart.md)*): [Product](product.md)
 
 
-*Defined in [product.ts:10](https://github.com/FlareMind/smart-cart/blob/a83b470/src/product.ts#L10)*
+*Defined in [product.ts:10](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L10)*
 
 
 
@@ -73,7 +73,7 @@
 
 **●  cart**:  *[ICart](../interfaces/icart.md)* 
 
-*Defined in [product.ts:9](https://github.com/FlareMind/smart-cart/blob/a83b470/src/product.ts#L9)*
+*Defined in [product.ts:9](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L9)*
 
 
 
@@ -87,7 +87,7 @@ ___
 
 **●  id**:  *`number`* 
 
-*Defined in [product.ts:8](https://github.com/FlareMind/smart-cart/blob/a83b470/src/product.ts#L8)*
+*Defined in [product.ts:8](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L8)*
 
 
 
@@ -101,7 +101,7 @@ ___
 
 **●  productData**:  *[IProductData](../interfaces/iproductdata.md)* 
 
-*Defined in [product.ts:10](https://github.com/FlareMind/smart-cart/blob/a83b470/src/product.ts#L10)*
+*Defined in [product.ts:10](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L10)*
 
 
 
@@ -121,7 +121,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[getCurrency](../interfaces/iproduct.md#getcurrency)*
 
-*Defined in [product.ts:130](https://github.com/FlareMind/smart-cart/blob/a83b470/src/product.ts#L130)*
+*Defined in [product.ts:130](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L130)*
 
 
 
@@ -150,7 +150,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[getData](../interfaces/iproduct.md#getdata)*
 
-*Defined in [product.ts:48](https://github.com/FlareMind/smart-cart/blob/a83b470/src/product.ts#L48)*
+*Defined in [product.ts:48](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L48)*
 
 
 
@@ -179,7 +179,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[getExtra](../interfaces/iproduct.md#getextra)*
 
-*Defined in [product.ts:154](https://github.com/FlareMind/smart-cart/blob/a83b470/src/product.ts#L154)*
+*Defined in [product.ts:154](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L154)*
 
 
 
@@ -208,7 +208,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[getId](../interfaces/iproduct.md#getid)*
 
-*Defined in [product.ts:39](https://github.com/FlareMind/smart-cart/blob/a83b470/src/product.ts#L39)*
+*Defined in [product.ts:39](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L39)*
 
 
 
@@ -237,7 +237,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[getQuantity](../interfaces/iproduct.md#getquantity)*
 
-*Defined in [product.ts:56](https://github.com/FlareMind/smart-cart/blob/a83b470/src/product.ts#L56)*
+*Defined in [product.ts:56](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L56)*
 
 
 
@@ -266,7 +266,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[getTotalPrice](../interfaces/iproduct.md#gettotalprice)*
 
-*Defined in [product.ts:109](https://github.com/FlareMind/smart-cart/blob/a83b470/src/product.ts#L109)*
+*Defined in [product.ts:109](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L109)*
 
 
 
@@ -303,7 +303,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[getVat](../interfaces/iproduct.md#getvat)*
 
-*Defined in [product.ts:138](https://github.com/FlareMind/smart-cart/blob/a83b470/src/product.ts#L138)*
+*Defined in [product.ts:138](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L138)*
 
 
 
@@ -332,7 +332,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[getWeight](../interfaces/iproduct.md#getweight)*
 
-*Defined in [product.ts:95](https://github.com/FlareMind/smart-cart/blob/a83b470/src/product.ts#L95)*
+*Defined in [product.ts:95](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L95)*
 
 
 
@@ -369,7 +369,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[remove](../interfaces/iproduct.md#remove)*
 
-*Defined in [product.ts:86](https://github.com/FlareMind/smart-cart/blob/a83b470/src/product.ts#L86)*
+*Defined in [product.ts:86](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L86)*
 
 
 
@@ -396,7 +396,7 @@ ___
 
 
 
-*Defined in [product.ts:66](https://github.com/FlareMind/smart-cart/blob/a83b470/src/product.ts#L66)*
+*Defined in [product.ts:66](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L66)*
 
 
 

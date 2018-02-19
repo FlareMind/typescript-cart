@@ -1,4 +1,4 @@
-[smart-cart](../README.md) > [IProductData](../interfaces/iproductdata.md)
+[typescript-cart](../README.md) > [IProductData](../interfaces/iproductdata.md)
 
 
 
@@ -12,7 +12,7 @@
 
 **●  additionPrice**:  *`number`* 
 
-*Defined in [interfaces/product-data.ts:23](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/product-data.ts#L23)*
+*Defined in [interfaces/product-data.ts:23](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product-data.ts#L23)*
 
 
 
@@ -26,7 +26,7 @@ ___
 
 **●  basePrice**:  *`number`* 
 
-*Defined in [interfaces/product-data.ts:22](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/product-data.ts#L22)*
+*Defined in [interfaces/product-data.ts:22](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product-data.ts#L22)*
 
 
 
@@ -40,7 +40,7 @@ ___
 
 **●  currency**:  *[ICurrency](icurrency.md)* 
 
-*Defined in [interfaces/product-data.ts:21](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/product-data.ts#L21)*
+*Defined in [interfaces/product-data.ts:21](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product-data.ts#L21)*
 
 
 
@@ -54,7 +54,7 @@ ___
 
 **●  extra**:  *`any`* 
 
-*Defined in [interfaces/product-data.ts:30](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/product-data.ts#L30)*
+*Defined in [interfaces/product-data.ts:30](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product-data.ts#L30)*
 
 
 
@@ -68,7 +68,7 @@ ___
 
 **●  quantity**:  *`number`* 
 
-*Defined in [interfaces/product-data.ts:10](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/product-data.ts#L10)*
+*Defined in [interfaces/product-data.ts:10](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product-data.ts#L10)*
 
 
 
@@ -82,7 +82,7 @@ ___
 
 **●  sku**:  *`string`* 
 
-*Defined in [interfaces/product-data.ts:9](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/product-data.ts#L9)*
+*Defined in [interfaces/product-data.ts:9](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product-data.ts#L9)*
 
 
 
@@ -96,7 +96,7 @@ ___
 
 **●  vat**:  *`number`* 
 
-*Defined in [interfaces/product-data.ts:24](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/product-data.ts#L24)*
+*Defined in [interfaces/product-data.ts:24](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product-data.ts#L24)*
 
 
 
@@ -110,7 +110,7 @@ ___
 
 **●  vatInPrice**:  *`boolean`* 
 
-*Defined in [interfaces/product-data.ts:25](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/product-data.ts#L25)*
+*Defined in [interfaces/product-data.ts:25](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product-data.ts#L25)*
 
 
 
@@ -124,7 +124,7 @@ ___
 
 **●  weight**:  *`number`⎮`null`* 
 
-*Defined in [interfaces/product-data.ts:16](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/product-data.ts#L16)*
+*Defined in [interfaces/product-data.ts:16](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product-data.ts#L16)*
 
 
 
@@ -138,7 +138,7 @@ ___
 
 **●  weightUnitSystem**:  *[IWeightUnit](iweightunit.md)* 
 
-*Defined in [interfaces/product-data.ts:15](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/product-data.ts#L15)*
+*Defined in [interfaces/product-data.ts:15](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product-data.ts#L15)*
 
 
 

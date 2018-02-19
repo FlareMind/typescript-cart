@@ -1,4 +1,4 @@
-[smart-cart](../README.md) > [ICurrencyConverter](../interfaces/icurrencyconverter.md)
+[typescript-cart](../README.md) > [ICurrencyConverter](../interfaces/icurrencyconverter.md)
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*Defined in [interfaces/currency-converter.ts:4](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/currency-converter.ts#L4)*
+*Defined in [interfaces/currency-converter.ts:4](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/currency-converter.ts#L4)*
 
 
 

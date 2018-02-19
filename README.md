@@ -1,7 +1,7 @@
-# smart-cart
-[![Build Status](https://travis-ci.org/FlareMind/smart-cart.svg?branch=master)](https://travis-ci.org/FlareMind/smart-cart)
+# typescript-cart
+[![Build Status](https://travis-ci.org/FlareMind/typescript-cart.svg?branch=master)](https://travis-ci.org/FlareMind/typescript-cart)
 
-Smart-cart is a small JavaScript/Typescript cart for e-commerce. It has functionality for currencies, VAT and weight.
+Typescript-cart is a small JavaScript/Typescript cart for e-commerce. It has functionality for currencies, VAT and weight.
 
 ## Installation
 

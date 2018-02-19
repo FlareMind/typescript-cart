@@ -1,4 +1,4 @@
-[smart-cart](../README.md) > [ICart](../interfaces/icart.md)
+[typescript-cart](../README.md) > [ICart](../interfaces/icart.md)
 
 
 
@@ -20,7 +20,7 @@
 
 
 
-*Defined in [interfaces/cart.ts:21](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L21)*
+*Defined in [interfaces/cart.ts:21](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L21)*
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-*Defined in [interfaces/cart.ts:22](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L22)*
+*Defined in [interfaces/cart.ts:22](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L22)*
 
 
 
@@ -68,7 +68,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:25](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L25)*
+*Defined in [interfaces/cart.ts:25](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L25)*
 
 
 
@@ -90,7 +90,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:18](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L18)*
+*Defined in [interfaces/cart.ts:18](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L18)*
 
 
 
@@ -112,7 +112,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:48](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L48)*
+*Defined in [interfaces/cart.ts:48](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L48)*
 
 
 
@@ -134,7 +134,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:20](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L20)*
+*Defined in [interfaces/cart.ts:20](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L20)*
 
 
 
@@ -164,7 +164,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:13](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L13)*
+*Defined in [interfaces/cart.ts:13](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L13)*
 
 
 
@@ -186,7 +186,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:19](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L19)*
+*Defined in [interfaces/cart.ts:19](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L19)*
 
 
 
@@ -208,7 +208,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:33](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L33)*
+*Defined in [interfaces/cart.ts:33](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L33)*
 
 
 
@@ -230,7 +230,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:35](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L35)*
+*Defined in [interfaces/cart.ts:35](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L35)*
 
 
 
@@ -252,7 +252,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:43](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L43)*
+*Defined in [interfaces/cart.ts:43](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L43)*
 
 
 
@@ -274,7 +274,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:31](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L31)*
+*Defined in [interfaces/cart.ts:31](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L31)*
 
 
 
@@ -304,7 +304,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:32](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L32)*
+*Defined in [interfaces/cart.ts:32](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L32)*
 
 
 
@@ -326,7 +326,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:40](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L40)*
+*Defined in [interfaces/cart.ts:40](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L40)*
 
 
 
@@ -348,7 +348,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:41](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L41)*
+*Defined in [interfaces/cart.ts:41](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L41)*
 
 
 
@@ -370,7 +370,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:24](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L24)*
+*Defined in [interfaces/cart.ts:24](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L24)*
 
 
 
@@ -400,7 +400,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:34](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L34)*
+*Defined in [interfaces/cart.ts:34](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L34)*
 
 
 
@@ -430,7 +430,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:30](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L30)*
+*Defined in [interfaces/cart.ts:30](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L30)*
 
 
 
@@ -460,7 +460,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:42](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L42)*
+*Defined in [interfaces/cart.ts:42](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L42)*
 
 
 
@@ -490,7 +490,7 @@ ___
 
 
 
-*Defined in [interfaces/cart.ts:23](https://github.com/FlareMind/smart-cart/blob/a83b470/src/interfaces/cart.ts#L23)*
+*Defined in [interfaces/cart.ts:23](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/cart.ts#L23)*
 
 
 
