@@ -1,6 +1,6 @@
 {
-  "name": "smart-cart",
-  "version": "0.0.1",
+  "name": "typescript-cart",
+  "version": "1.0.0",
   "description": "A lightweight cart model.",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
