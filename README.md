@@ -7,7 +7,7 @@ Typescript-cart is a small JavaScript/Typescript cart for e-commerce. It has fun
 
 With npm
 ```
-npm install --save
+npm install --save typescript-cart
 ```
 
 ## Documentation
