@@ -18,7 +18,7 @@
 
 
 
-*Defined in [interfaces/product.ts:22](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product.ts#L22)*
+*Defined in [interfaces/product.ts:22](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L22)*
 
 
 
@@ -40,7 +40,7 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:19](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product.ts#L19)*
+*Defined in [interfaces/product.ts:19](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L19)*
 
 
 
@@ -62,7 +62,7 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:24](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product.ts#L24)*
+*Defined in [interfaces/product.ts:24](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L24)*
 
 
 
@@ -84,7 +84,7 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:7](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product.ts#L7)*
+*Defined in [interfaces/product.ts:7](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L7)*
 
 
 
@@ -106,7 +106,7 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:12](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product.ts#L12)*
+*Defined in [interfaces/product.ts:12](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L12)*
 
 
 
@@ -128,7 +128,7 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:21](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product.ts#L21)*
+*Defined in [interfaces/product.ts:21](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L21)*
 
 
 
@@ -158,7 +158,7 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:23](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product.ts#L23)*
+*Defined in [interfaces/product.ts:23](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L23)*
 
 
 
@@ -180,7 +180,7 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:20](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product.ts#L20)*
+*Defined in [interfaces/product.ts:20](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L20)*
 
 
 
@@ -206,17 +206,17 @@ ___
 
 ###  remove
 
-► **remove**(): `boolean`
+► **remove**(): `Promise`.<`void`>
 
 
 
-*Defined in [interfaces/product.ts:14](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product.ts#L14)*
+*Defined in [interfaces/product.ts:14](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L14)*
 
 
 
 
 
-**Returns:** `boolean`
+**Returns:** `Promise`.<`void`>
 
 
 
@@ -232,7 +232,7 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:13](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/product.ts#L13)*
+*Defined in [interfaces/product.ts:13](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L13)*
 
 
 

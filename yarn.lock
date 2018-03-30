@@ -275,8 +275,8 @@ content-type-parser@^1.0.1:
   resolved "https://registry.yarnpkg.com/content-type-parser/-/content-type-parser-1.0.2.tgz#caabe80623e63638b2502fd4c7f12ff4ce2352e7"
 
 core-js@^2.5.0:
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.3.tgz#8acc38345824f16d8365b7c9b4259168e8ed603e"
+  version "2.5.4"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.4.tgz#f2c8bf181f2a80b92f360121429ce63a2f0aeae0"
 
 core-util-is@1.0.2:
   version "1.0.2"
@@ -987,8 +987,8 @@ typedoc@^0.10.0:
     typescript "2.7.1"
 
 typescript-observable@^1.0.14:
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/typescript-observable/-/typescript-observable-1.0.15.tgz#5ed7838915f19c1315cd0e813a7cb3cc8b3d2467"
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/typescript-observable/-/typescript-observable-1.0.16.tgz#0c837109cd123b9d3dc58ef8f7e8926f7c07c2e3"
   dependencies:
     "@types/core-js" "^0.9.42"
     core-js "^2.5.0"

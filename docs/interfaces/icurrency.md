@@ -20,7 +20,7 @@
 
 **●  currencyName**:  *`string`* 
 
-*Defined in [interfaces/currency.ts:2](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/currency.ts#L2)*
+*Defined in [interfaces/currency.ts:2](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency.ts#L2)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  prefix**:  *`string`⎮`null`* 
 
-*Defined in [interfaces/currency.ts:3](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/currency.ts#L3)*
+*Defined in [interfaces/currency.ts:3](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency.ts#L3)*
 
 
 
@@ -48,7 +48,7 @@ ___
 
 **●  suffix**:  *`string`* 
 
-*Defined in [interfaces/currency.ts:4](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/currency.ts#L4)*
+*Defined in [interfaces/currency.ts:4](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency.ts#L4)*
 
 
 
@@ -66,7 +66,7 @@ ___
 
 
 
-*Defined in [interfaces/currency.ts:8](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/currency.ts#L8)*
+*Defined in [interfaces/currency.ts:8](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency.ts#L8)*
 
 
 
@@ -97,7 +97,7 @@ ___
 
 
 
-*Defined in [interfaces/currency.ts:6](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/currency.ts#L6)*
+*Defined in [interfaces/currency.ts:6](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency.ts#L6)*
 
 
 

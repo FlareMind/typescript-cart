@@ -50,7 +50,7 @@
 
 *Overrides [Currency](currency.md).[currencyName](currency.md#currencyname)*
 
-*Defined in [currencies/usd.ts:4](https://github.com/FlareMind/typescript-cart/blob/0489372/src/currencies/usd.ts#L4)*
+*Defined in [currencies/usd.ts:4](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/currencies/usd.ts#L4)*
 
 
 
@@ -68,7 +68,7 @@ ___
 
 *Overrides [Currency](currency.md).[prefix](currency.md#prefix)*
 
-*Defined in [currencies/usd.ts:6](https://github.com/FlareMind/typescript-cart/blob/0489372/src/currencies/usd.ts#L6)*
+*Defined in [currencies/usd.ts:6](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/currencies/usd.ts#L6)*
 
 
 
@@ -86,7 +86,7 @@ ___
 
 *Overrides [Currency](currency.md).[suffix](currency.md#suffix)*
 
-*Defined in [currencies/usd.ts:5](https://github.com/FlareMind/typescript-cart/blob/0489372/src/currencies/usd.ts#L5)*
+*Defined in [currencies/usd.ts:5](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/currencies/usd.ts#L5)*
 
 
 
@@ -108,7 +108,7 @@ ___
 
 *Inherited from [Currency](currency.md).[format](currency.md#format)*
 
-*Defined in [interfaces/currency.ts:21](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/currency.ts#L21)*
+*Defined in [interfaces/currency.ts:21](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency.ts#L21)*
 
 
 
@@ -143,7 +143,7 @@ ___
 
 *Inherited from [Currency](currency.md).[getCode](currency.md#getcode)*
 
-*Defined in [interfaces/currency.ts:34](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/currency.ts#L34)*
+*Defined in [interfaces/currency.ts:34](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency.ts#L34)*
 
 
 
@@ -167,7 +167,7 @@ ___
 
 *Inherited from [Currency](currency.md).[toString](currency.md#tostring)*
 
-*Defined in [interfaces/currency.ts:38](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/currency.ts#L38)*
+*Defined in [interfaces/currency.ts:38](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency.ts#L38)*
 
 
 

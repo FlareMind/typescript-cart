@@ -1,3 +1,7 @@
+## Version 1.0.6 (2018-03-30)
+### Functionality
+* Removed product knowledge of cart.
+
 ## Version 1.0.5 (2018-03-30)
 ### Functionality
 * Added name in product object.

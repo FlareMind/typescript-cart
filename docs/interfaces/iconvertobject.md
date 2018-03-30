@@ -12,7 +12,7 @@
 
 **●  amount**:  *`number`* 
 
-*Defined in [interfaces/currency-converter.ts:8](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/currency-converter.ts#L8)*
+*Defined in [interfaces/currency-converter.ts:8](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency-converter.ts#L8)*
 
 
 
@@ -26,7 +26,7 @@ ___
 
 **●  from**:  *[ICurrency](icurrency.md)* 
 
-*Defined in [interfaces/currency-converter.ts:9](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/currency-converter.ts#L9)*
+*Defined in [interfaces/currency-converter.ts:9](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency-converter.ts#L9)*
 
 
 
@@ -40,7 +40,7 @@ ___
 
 **●  to**:  *[ICurrency](icurrency.md)* 
 
-*Defined in [interfaces/currency-converter.ts:10](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/currency-converter.ts#L10)*
+*Defined in [interfaces/currency-converter.ts:10](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency-converter.ts#L10)*
 
 
 

@@ -4,8 +4,22 @@
 
 # Class: Product
 
+## Hierarchy
+
+
+ `Observable`
+
+**↳ Product**
+
+
+
+
+
+
+
 ## Implements
 
+* `IObservable`
 * [IProduct](../interfaces/iproduct.md)
 
 ## Index
@@ -17,13 +31,14 @@
 
 ### Properties
 
-* [cart](product.md#cart)
 * [id](product.md#id)
 * [productData](product.md#productdata)
 
 
 ### Methods
 
+* [clear](product.md#clear)
+* [count](product.md#count)
 * [getCurrency](product.md#getcurrency)
 * [getData](product.md#getdata)
 * [getExtra](product.md#getextra)
@@ -32,6 +47,9 @@
 * [getTotalPrice](product.md#gettotalprice)
 * [getVat](product.md#getvat)
 * [getWeight](product.md#getweight)
+* [notify](product.md#notify)
+* [off](product.md#off)
+* [on](product.md#on)
 * [remove](product.md#remove)
 * [setQuantity](product.md#setquantity)
 
@@ -42,10 +60,12 @@
 <a id="constructor"></a>
 
 
-### ⊕ **new Product**(id: *`number`*, data: *[IAddProduct](../interfaces/iaddproduct.md)*, cart: *[ICart](../interfaces/icart.md)*): [Product](product.md)
+### ⊕ **new Product**(id: *`number`*, data: *[IAddProduct](../interfaces/iaddproduct.md)*, cartConfig: *[ICartConfig](../interfaces/icartconfig.md)*): [Product](product.md)
 
 
-*Defined in [product.ts:10](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L10)*
+*Overrides Observable.__constructor*
+
+*Defined in [product.ts:11](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/product.ts#L11)*
 
 
 
@@ -55,7 +75,7 @@
 | ------ | ------ | ------ |
 | id | `number`   |  - |
 | data | [IAddProduct](../interfaces/iaddproduct.md)   |  - |
-| cart | [ICart](../interfaces/icart.md)   |  - |
+| cartConfig | [ICartConfig](../interfaces/icartconfig.md)   |  - |
 
 
 
@@ -67,27 +87,13 @@
 
 
 ## Properties
-<a id="cart"></a>
-
-### «Private» cart
-
-**●  cart**:  *[ICart](../interfaces/icart.md)* 
-
-*Defined in [product.ts:9](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L9)*
-
-
-
-
-
-___
-
 <a id="id"></a>
 
 ### «Private» id
 
 **●  id**:  *`number`* 
 
-*Defined in [product.ts:8](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L8)*
+*Defined in [product.ts:10](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/product.ts#L10)*
 
 
 
@@ -101,7 +107,7 @@ ___
 
 **●  productData**:  *[IProductData](../interfaces/iproductdata.md)* 
 
-*Defined in [product.ts:10](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L10)*
+*Defined in [product.ts:11](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/product.ts#L11)*
 
 
 
@@ -111,6 +117,54 @@ ___
 
 
 ## Methods
+<a id="clear"></a>
+
+###  clear
+
+► **clear**(): `void`
+
+
+
+*Inherited from Observable.clear*
+
+*Defined in C:/Users/mattu/workspace/typescript-cart/node_modules/typescript-observable/dist/observable.d.ts:12*
+
+
+
+
+
+**Returns:** `void`
+
+
+
+
+
+___
+
+<a id="count"></a>
+
+###  count
+
+► **count**(): `number`
+
+
+
+*Inherited from Observable.count*
+
+*Defined in C:/Users/mattu/workspace/typescript-cart/node_modules/typescript-observable/dist/observable.d.ts:11*
+
+
+
+
+
+**Returns:** `number`
+
+
+
+
+
+___
+
 <a id="getcurrency"></a>
 
 ###  getCurrency
@@ -121,7 +175,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[getCurrency](../interfaces/iproduct.md#getcurrency)*
 
-*Defined in [product.ts:130](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L130)*
+*Defined in [product.ts:134](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/product.ts#L134)*
 
 
 
@@ -150,7 +204,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[getData](../interfaces/iproduct.md#getdata)*
 
-*Defined in [product.ts:48](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L48)*
+*Defined in [product.ts:50](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/product.ts#L50)*
 
 
 
@@ -179,7 +233,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[getExtra](../interfaces/iproduct.md#getextra)*
 
-*Defined in [product.ts:154](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L154)*
+*Defined in [product.ts:158](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/product.ts#L158)*
 
 
 
@@ -208,7 +262,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[getId](../interfaces/iproduct.md#getid)*
 
-*Defined in [product.ts:39](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L39)*
+*Defined in [product.ts:41](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/product.ts#L41)*
 
 
 
@@ -237,7 +291,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[getQuantity](../interfaces/iproduct.md#getquantity)*
 
-*Defined in [product.ts:56](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L56)*
+*Defined in [product.ts:58](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/product.ts#L58)*
 
 
 
@@ -266,7 +320,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[getTotalPrice](../interfaces/iproduct.md#gettotalprice)*
 
-*Defined in [product.ts:109](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L109)*
+*Defined in [product.ts:113](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/product.ts#L113)*
 
 
 
@@ -303,7 +357,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[getVat](../interfaces/iproduct.md#getvat)*
 
-*Defined in [product.ts:138](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L138)*
+*Defined in [product.ts:142](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/product.ts#L142)*
 
 
 
@@ -332,7 +386,7 @@ ___
 
 *Implementation of [IProduct](../interfaces/iproduct.md).[getWeight](../interfaces/iproduct.md#getweight)*
 
-*Defined in [product.ts:95](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L95)*
+*Defined in [product.ts:99](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/product.ts#L99)*
 
 
 
@@ -359,27 +413,125 @@ The weight of the cart
 
 ___
 
-<a id="remove"></a>
+<a id="notify"></a>
 
-###  remove
+###  notify
 
-► **remove**(): `boolean`
-
-
-
-*Implementation of [IProduct](../interfaces/iproduct.md).[remove](../interfaces/iproduct.md#remove)*
-
-*Defined in [product.ts:86](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L86)*
+► **notify**(event: *`IObservableEvent`*, data: *`any`*): `Promise`.<`void`>
 
 
 
-Remove the product from the cart
+*Inherited from Observable.notify*
+
+*Defined in C:/Users/mattu/workspace/typescript-cart/node_modules/typescript-observable/dist/observable.d.ts:15*
+
+
+
+**Parameters:**
+
+| Param | Type | Description |
+| ------ | ------ | ------ |
+| event | `IObservableEvent`   |  - |
+| data | `any`   |  - |
+
+
+
+
+
+**Returns:** `Promise`.<`void`>
+
+
+
+
+
+___
+
+<a id="off"></a>
+
+###  off
+
+► **off**(observer: *`IObserver`*): `boolean`
+
+
+
+*Inherited from Observable.off*
+
+*Defined in C:/Users/mattu/workspace/typescript-cart/node_modules/typescript-observable/dist/observable.d.ts:14*
+
+
+
+**Parameters:**
+
+| Param | Type | Description |
+| ------ | ------ | ------ |
+| observer | `IObserver`   |  - |
+
 
 
 
 
 **Returns:** `boolean`
-true if the product was removed, false otherwise
+
+
+
+
+
+___
+
+<a id="on"></a>
+
+###  on
+
+► **on**(type: *`string`⎮`IObservableEvent`⎮(`string`⎮`IObservableEvent`)[]*, callback: *`ObserverCallback`⎮`IObserver`*): `ICancel`
+
+
+
+*Inherited from Observable.on*
+
+*Defined in C:/Users/mattu/workspace/typescript-cart/node_modules/typescript-observable/dist/observable.d.ts:13*
+
+
+
+**Parameters:**
+
+| Param | Type | Description |
+| ------ | ------ | ------ |
+| type | `string`⎮`IObservableEvent`⎮(`string`⎮`IObservableEvent`)[]   |  - |
+| callback | `ObserverCallback`⎮`IObserver`   |  - |
+
+
+
+
+
+**Returns:** `ICancel`
+
+
+
+
+
+___
+
+<a id="remove"></a>
+
+###  remove
+
+► **remove**(): `Promise`.<`void`>
+
+
+
+*Implementation of [IProduct](../interfaces/iproduct.md).[remove](../interfaces/iproduct.md#remove)*
+
+*Defined in [product.ts:88](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/product.ts#L88)*
+
+
+
+Remove the product from cart
+
+
+
+
+**Returns:** `Promise`.<`void`>
+A promise when the product is removed
 
 
 
@@ -396,7 +548,7 @@ ___
 
 
 
-*Defined in [product.ts:66](https://github.com/FlareMind/typescript-cart/blob/0489372/src/product.ts#L66)*
+*Defined in [product.ts:68](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/product.ts#L68)*
 
 
 

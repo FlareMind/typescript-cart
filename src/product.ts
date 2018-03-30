@@ -2,17 +2,18 @@ import {IProduct} from "./interfaces/product";
 import {IAddProduct, IProductData} from "./interfaces/product-data";
 import {IWeightUnit} from "./interfaces/weight-unit";
 import {ICurrency} from "./interfaces/currency";
-import {ICart} from "./interfaces/cart";
+import {Observable} from "typescript-observable";
+import {ICartConfig} from "./interfaces/cart-config";
+import ProductEvent from './product-events'
 
-export class Product implements IProduct {
+export class Product extends Observable implements IProduct {
     private id: number;
-    private cart: ICart;
     private productData: IProductData;
 
-    constructor(id: number, data: IAddProduct, cart: ICart) {
+    constructor(id: number, data: IAddProduct, cartConfig: ICartConfig) {
+        super();
 
         this.id = id;
-        this.cart = cart;
 
         // Set product data
         this.productData = {
@@ -20,14 +21,14 @@ export class Product implements IProduct {
             name: data.name || '',
             quantity: data.quantity || 1,
 
-            weightUnitSystem: cart.getDefaultUnitSystem(),
+            weightUnitSystem: cartConfig.defaultWeightUnit,
             weight: data.weight || 0,
 
-            currency: cart.getDefaultCurrency(),
+            currency: cartConfig.defaultCurrency,
             basePrice: data.basePrice,
             additionPrice: data.additionPrice || 0,
-            vat: data.vat || cart.getConfig().defaultVat,
-            vatInPrice: cart.getConfig().vatInPrice,
+            vat: data.vat || cartConfig.defaultVat,
+            vatInPrice: cartConfig.vatInPrice,
 
             extra: data.extra || {}
         };
@@ -81,11 +82,13 @@ export class Product implements IProduct {
     }
 
     /**
-     * Remove the product from the cart
-     * @returns {boolean} true if the product was removed, false otherwise
+     * Remove the product from cart
+     * @return {Promise<void>} A promise when the product is removed
      */
-    remove(): boolean {
-        return this.cart.removeItem(this.getId());
+    remove(): Promise<void> {
+        return this.notify(ProductEvent.REQUEST_DELETE, {
+            id: this.getId()
+        });
     }
 
     /**

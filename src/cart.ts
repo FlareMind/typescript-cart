@@ -10,6 +10,7 @@ import {IConvertObject, ICurrencyConverter} from "./interfaces/currency-converte
 import {IAddProduct} from "./interfaces/product-data";
 import {Product} from "./product";
 import CartEvent from "./cart-events"
+import ProductEvent from './product-events'
 import {CurrencyConverter} from "./currency-converter";
 import deepEqual = require("deep-equal");
 
@@ -127,8 +128,12 @@ export class Cart extends Observable implements ICart {
         }
 
         // Add a completely new product.
-        let newProduct = new Product(this.content.length, product, this);
+        let newProduct = new Product(this.content.length, product, this.getConfig());
         this.content.push(newProduct);
+
+        newProduct.on(ProductEvent.REQUEST_DELETE, data => {
+            this.removeItem(data.id);
+        });
 
         // Notify observers
         this.notify(CartEvent.PRODUCT_ADD, {

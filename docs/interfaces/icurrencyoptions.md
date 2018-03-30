@@ -12,7 +12,7 @@
 
 **●  decimals**:  *`undefined`⎮`number`* 
 
-*Defined in [interfaces/currency.ts:13](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/currency.ts#L13)*
+*Defined in [interfaces/currency.ts:13](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency.ts#L13)*
 
 
 
@@ -26,7 +26,7 @@ ___
 
 **●  preferPrefix**:  *`undefined`⎮`true`⎮`false`* 
 
-*Defined in [interfaces/currency.ts:12](https://github.com/FlareMind/typescript-cart/blob/0489372/src/interfaces/currency.ts#L12)*
+*Defined in [interfaces/currency.ts:12](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency.ts#L12)*
 
 
 

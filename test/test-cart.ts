@@ -1,13 +1,13 @@
 import 'mocha'
 import { expect } from 'chai'
-import {ICurrencyConverter} from "../src/interfaces/currency-converter";
-import {CurrencyConverter} from "../src/currency-converter";
-import {Cart} from "../src/cart";
-import {Currencies} from "../src/currencies/currencies";
-import {WeightUnits} from "../src/weight-units/weight-units";
-import {ICart} from "../src/interfaces/cart";
+import {ICurrencyConverter} from "../src";
+import {CurrencyConverter} from "../src";
+import {Cart} from "../src";
+import {Currencies} from "../src";
+import {WeightUnits} from "../src";
+import {ICart} from "../src";
 import Products from './mock-products'
-import {IProduct} from "../src/interfaces/product";
+import {IProduct} from "../src";
 
 describe('Cart', () => {
     let converter: ICurrencyConverter;
@@ -90,19 +90,20 @@ describe('Cart', () => {
             expect(product.getQuantity()).to.equal(add);
         });
 
-        it('should be possible to remove products', () => {
-            cart
-                .addItem(Products.PRODUCT_B)
-                .remove();
-            expect(cart.count()).to.equal(0);
-
+        it('should be possible to remove products', done => {
             cart
                 .addItem(Products.PRODUCT_A);
             cart
                 .addItem(Products.PRODUCT_B)
-                .remove();
-            expect(cart.count()).to.equal(Products.PRODUCT_A.quantity || 1);
-            expect(cart.getContents()[0].getData().sku).to.equal(Products.PRODUCT_A.sku);
+                .remove()
+                .then(() => {
+
+                    if (cart.count() === (Products.PRODUCT_A.quantity || 1)
+                        && cart.getContents()[0].getData().sku === Products.PRODUCT_A.sku) {
+
+                        done();
+                    }
+                });
         });
 
         it('should be possible to clear cart', () => {

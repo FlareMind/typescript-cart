@@ -11,7 +11,7 @@ export interface IProduct {
      */
     getQuantity(): number;
     setQuantity(quantity: number, add?: boolean): IProduct;
-    remove(): boolean;
+    remove(): Promise<void>;
 
     /*
      * DATA
