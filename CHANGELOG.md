@@ -1,3 +1,7 @@
+## Version 1.0.5 (2018-03-30)
+### Functionality
+* Added name in product object.
+
 ## Version 1.0.4 (2018-03-21)
 ### NPM
 * Dist directory was missing in npm

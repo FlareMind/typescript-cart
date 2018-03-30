@@ -17,6 +17,7 @@ export class Product implements IProduct {
         // Set product data
         this.productData = {
             sku: data.sku,
+            name: data.name || '',
             quantity: data.quantity || 1,
 
             weightUnitSystem: cart.getDefaultUnitSystem(),

@@ -7,6 +7,7 @@ export interface IProductData {
      * GENERAL DATA
      */
     sku : string;                       // Product SKU
+    name: string;                       // Name of product
     quantity : number;                  // Quantity
 
     /*
@@ -32,6 +33,7 @@ export interface IProductData {
 
 export interface IAddProduct {
     sku: string;
+    name?: string;
     quantity?: number;
     weight?: number;
     basePrice: number;

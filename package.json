@@ -1,7 +1,8 @@
 {
   "name": "typescript-cart",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A lightweight cart model.",
+  "keywords": ["currency", "rates", "ECB", "money", "convert"],
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "repository": "https://github.com/FlareMind/typescript-cart.git",
