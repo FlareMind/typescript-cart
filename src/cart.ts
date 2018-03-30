@@ -102,6 +102,7 @@ export class Cart extends Observable implements ICart {
         }
 
         // Add possible missing attributes (needed to find the product)
+        product.name = product.name || '';
         product.quantity = product.quantity || 1;
         product.weight = product.weight || 0;
         product.additionPrice = product.additionPrice || 0;
@@ -336,6 +337,7 @@ export class Cart extends Observable implements ICart {
             config: this.getConfig(),
             products: this.content.map(product => (<IAddProduct>{
                 sku: product.getData().sku,
+                name: product.getData().name,
                 basePrice: product.getData().basePrice,
                 vat: product.getData().vat,
                 additionPrice: product.getData().additionPrice,

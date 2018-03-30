@@ -5,6 +5,7 @@ import {ICurrency} from "./currency";
 export interface IProduct {
 
     getId(): number;
+    getName(): string;
 
     /*
      * CHANGE PRODUCT

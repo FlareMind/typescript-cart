@@ -1,3 +1,7 @@
+## Version 1.0.7 (2018-03-30)
+### Bug
+* Name was not exported from cart
+
 ## Version 1.0.6 (2018-03-30)
 ### Functionality
 * Removed product knowledge of cart.

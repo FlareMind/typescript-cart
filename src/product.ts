@@ -36,10 +36,18 @@ export class Product extends Observable implements IProduct {
 
     /**
      * Get the id of the product. This id is specific for the cart of the products.
-     * @returns {number}
+     * @returns {number} The id
      */
     getId(): number {
         return this.id;
+    }
+
+    /**
+     * Get the name of the product
+     * @returns {string} The product name
+     */
+    getName(): string {
+        return this.productData.name;
     }
 
     /**
