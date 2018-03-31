@@ -128,7 +128,7 @@ export class Product extends Observable implements IProduct {
 
         // VAT should be added
         else if (!this.getData().vatInPrice) {
-            return totalPrice * (1 + this.getData().vat);
+            return totalPrice * (1 + this.getData().vat) * this.getQuantity();
         }
 
         // VAT should be removed from the price

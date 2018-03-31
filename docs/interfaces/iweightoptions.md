@@ -12,7 +12,7 @@
 
 **●  decimals**:  *`undefined`⎮`number`* 
 
-*Defined in [interfaces/weight-unit.ts:12](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/weight-unit.ts#L12)*
+*Defined in [interfaces/weight-unit.ts:12](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/weight-unit.ts#L12)*
 
 
 

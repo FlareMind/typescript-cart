@@ -18,7 +18,7 @@
 
 
 
-*Defined in [interfaces/product.ts:22](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L22)*
+*Defined in [interfaces/product.ts:23](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/product.ts#L23)*
 
 
 
@@ -40,7 +40,7 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:19](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L19)*
+*Defined in [interfaces/product.ts:20](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/product.ts#L20)*
 
 
 
@@ -62,7 +62,7 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:24](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L24)*
+*Defined in [interfaces/product.ts:25](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/product.ts#L25)*
 
 
 
@@ -84,13 +84,35 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:7](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L7)*
+*Defined in [interfaces/product.ts:7](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/product.ts#L7)*
 
 
 
 
 
 **Returns:** `number`
+
+
+
+
+
+___
+
+<a id="getname"></a>
+
+###  getName
+
+► **getName**(): `string`
+
+
+
+*Defined in [interfaces/product.ts:8](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/product.ts#L8)*
+
+
+
+
+
+**Returns:** `string`
 
 
 
@@ -106,7 +128,7 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:12](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L12)*
+*Defined in [interfaces/product.ts:13](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/product.ts#L13)*
 
 
 
@@ -128,7 +150,7 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:21](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L21)*
+*Defined in [interfaces/product.ts:22](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/product.ts#L22)*
 
 
 
@@ -158,7 +180,7 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:23](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L23)*
+*Defined in [interfaces/product.ts:24](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/product.ts#L24)*
 
 
 
@@ -180,7 +202,7 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:20](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L20)*
+*Defined in [interfaces/product.ts:21](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/product.ts#L21)*
 
 
 
@@ -210,7 +232,7 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:14](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L14)*
+*Defined in [interfaces/product.ts:15](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/product.ts#L15)*
 
 
 
@@ -232,7 +254,7 @@ ___
 
 
 
-*Defined in [interfaces/product.ts:13](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/product.ts#L13)*
+*Defined in [interfaces/product.ts:14](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/product.ts#L14)*
 
 
 

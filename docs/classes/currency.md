@@ -63,7 +63,7 @@
 
 *Implementation of [ICurrency](../interfaces/icurrency.md).[currencyName](../interfaces/icurrency.md#currencyname)*
 
-*Defined in [interfaces/currency.ts:18](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency.ts#L18)*
+*Defined in [interfaces/currency.ts:18](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/currency.ts#L18)*
 
 
 
@@ -79,7 +79,7 @@ ___
 
 *Implementation of [ICurrency](../interfaces/icurrency.md).[prefix](../interfaces/icurrency.md#prefix)*
 
-*Defined in [interfaces/currency.ts:17](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency.ts#L17)*
+*Defined in [interfaces/currency.ts:17](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/currency.ts#L17)*
 
 
 
@@ -95,7 +95,7 @@ ___
 
 *Implementation of [ICurrency](../interfaces/icurrency.md).[suffix](../interfaces/icurrency.md#suffix)*
 
-*Defined in [interfaces/currency.ts:19](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency.ts#L19)*
+*Defined in [interfaces/currency.ts:19](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/currency.ts#L19)*
 
 
 
@@ -115,7 +115,7 @@ ___
 
 *Implementation of [ICurrency](../interfaces/icurrency.md).[format](../interfaces/icurrency.md#format)*
 
-*Defined in [interfaces/currency.ts:21](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency.ts#L21)*
+*Defined in [interfaces/currency.ts:21](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/currency.ts#L21)*
 
 
 
@@ -148,7 +148,7 @@ ___
 
 *Implementation of [ICurrency](../interfaces/icurrency.md).[getCode](../interfaces/icurrency.md#getcode)*
 
-*Defined in [interfaces/currency.ts:34](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency.ts#L34)*
+*Defined in [interfaces/currency.ts:34](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/currency.ts#L34)*
 
 
 
@@ -170,7 +170,7 @@ ___
 
 
 
-*Defined in [interfaces/currency.ts:38](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency.ts#L38)*
+*Defined in [interfaces/currency.ts:38](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/currency.ts#L38)*
 
 
 

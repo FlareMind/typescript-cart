@@ -18,7 +18,7 @@
 
 
 
-*Defined in [interfaces/currency-converter.ts:4](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/currency-converter.ts#L4)*
+*Defined in [interfaces/currency-converter.ts:4](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/currency-converter.ts#L4)*
 
 
 

@@ -19,7 +19,7 @@
 
 **●  label**:  *`string`* 
 
-*Defined in [interfaces/weight-unit.ts:3](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/weight-unit.ts#L3)*
+*Defined in [interfaces/weight-unit.ts:3](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/weight-unit.ts#L3)*
 
 
 
@@ -33,7 +33,7 @@ ___
 
 **●  unitName**:  *`string`* 
 
-*Defined in [interfaces/weight-unit.ts:2](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/weight-unit.ts#L2)*
+*Defined in [interfaces/weight-unit.ts:2](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/weight-unit.ts#L2)*
 
 
 
@@ -51,7 +51,7 @@ ___
 
 
 
-*Defined in [interfaces/weight-unit.ts:5](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/weight-unit.ts#L5)*
+*Defined in [interfaces/weight-unit.ts:5](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/weight-unit.ts#L5)*
 
 
 
@@ -81,7 +81,7 @@ ___
 
 
 
-*Defined in [interfaces/weight-unit.ts:6](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/weight-unit.ts#L6)*
+*Defined in [interfaces/weight-unit.ts:6](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/weight-unit.ts#L6)*
 
 
 
@@ -111,7 +111,7 @@ ___
 
 
 
-*Defined in [interfaces/weight-unit.ts:8](https://github.com/FlareMind/typescript-cart/blob/c89995c/src/interfaces/weight-unit.ts#L8)*
+*Defined in [interfaces/weight-unit.ts:8](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/weight-unit.ts#L8)*
 
 
 

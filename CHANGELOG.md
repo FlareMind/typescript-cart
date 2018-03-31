@@ -1,3 +1,7 @@
+## Version 1.0.7 (2018-03-31)
+### Bug
+* Fixed bug in total price.
+
 ## Version 1.0.7 (2018-03-30)
 ### Bug
 * Name was not exported from cart
