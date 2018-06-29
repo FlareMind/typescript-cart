@@ -1,3 +1,7 @@
+## Version 1.0.10 (2018-06-29)
+### Bug
+* Fixed the bug where the default weight was missing properties if the cart was loaded from JSON.
+
 ## Version 1.0.9 (2018-06-29)
 ### Bug
 * Fixed the bug where the default currency was missing the getCode property if the cart was loaded from JSON.
