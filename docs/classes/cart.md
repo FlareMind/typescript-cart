@@ -79,7 +79,7 @@
 
 *Overrides Observable.__constructor*
 
-*Defined in [cart.ts:22](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L22)*
+*Defined in [cart.ts:22](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L22)*
 
 
 
@@ -106,7 +106,7 @@
 
 **●  config**:  *[ICartConfig](../interfaces/icartconfig.md)* 
 
-*Defined in [cart.ts:18](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L18)*
+*Defined in [cart.ts:18](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L18)*
 
 
 
@@ -120,7 +120,7 @@ ___
 
 **●  content**:  *[IProduct](../interfaces/iproduct.md)[]*  =  []
 
-*Defined in [cart.ts:22](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L22)*
+*Defined in [cart.ts:22](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L22)*
 
 
 
@@ -134,7 +134,7 @@ ___
 
 **●  currency**:  *[ICurrency](../interfaces/icurrency.md)* 
 
-*Defined in [cart.ts:20](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L20)*
+*Defined in [cart.ts:20](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L20)*
 
 
 
@@ -148,7 +148,7 @@ ___
 
 **●  currencyConverter**:  *[ICurrencyConverter](../interfaces/icurrencyconverter.md)* 
 
-*Defined in [cart.ts:19](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L19)*
+*Defined in [cart.ts:19](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L19)*
 
 
 
@@ -162,7 +162,7 @@ ___
 
 **●  weightUnit**:  *[IWeightUnit](../interfaces/iweightunit.md)* 
 
-*Defined in [cart.ts:21](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L21)*
+*Defined in [cart.ts:21](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L21)*
 
 
 
@@ -184,7 +184,7 @@ ___
 
 *Implementation of [ICart](../interfaces/icart.md).[addItem](../interfaces/icart.md#additem)*
 
-*Defined in [cart.ts:85](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L85)*
+*Defined in [cart.ts:85](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L85)*
 
 
 
@@ -209,7 +209,7 @@ The added product
 
 *Implementation of [ICart](../interfaces/icart.md).[addItem](../interfaces/icart.md#additem)*
 
-*Defined in [cart.ts:92](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L92)*
+*Defined in [cart.ts:92](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L92)*
 
 
 
@@ -248,7 +248,7 @@ ___
 
 *Overrides Observable.clear*
 
-*Defined in [cart.ts:226](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L226)*
+*Defined in [cart.ts:226](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L226)*
 
 
 
@@ -279,7 +279,7 @@ ___
 
 *Overrides Observable.count*
 
-*Defined in [cart.ts:56](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L56)*
+*Defined in [cart.ts:56](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L56)*
 
 
 
@@ -308,7 +308,7 @@ ___
 
 *Implementation of [ICart](../interfaces/icart.md).[exportCart](../interfaces/icart.md#exportcart)*
 
-*Defined in [cart.ts:335](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L335)*
+*Defined in [cart.ts:335](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L335)*
 
 
 
@@ -335,7 +335,7 @@ ___
 
 
 
-*Defined in [cart.ts:152](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L152)*
+*Defined in [cart.ts:152](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L152)*
 
 
 
@@ -372,7 +372,7 @@ ___
 
 *Implementation of [ICart](../interfaces/icart.md).[get](../interfaces/icart.md#get)*
 
-*Defined in [cart.ts:70](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L70)*
+*Defined in [cart.ts:70](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L70)*
 
 
 
@@ -404,7 +404,7 @@ ___
 
 *Implementation of [ICart](../interfaces/icart.md).[getConfig](../interfaces/icart.md#getconfig)*
 
-*Defined in [cart.ts:48](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L48)*
+*Defined in [cart.ts:48](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L48)*
 
 
 
@@ -433,7 +433,7 @@ ___
 
 *Implementation of [ICart](../interfaces/icart.md).[getContents](../interfaces/icart.md#getcontents)*
 
-*Defined in [cart.ts:66](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L66)*
+*Defined in [cart.ts:66](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L66)*
 
 
 
@@ -462,7 +462,7 @@ ___
 
 *Implementation of [ICart](../interfaces/icart.md).[getCurrency](../interfaces/icart.md#getcurrency)*
 
-*Defined in [cart.ts:273](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L273)*
+*Defined in [cart.ts:273](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L273)*
 
 
 
@@ -491,7 +491,7 @@ ___
 
 *Implementation of [ICart](../interfaces/icart.md).[getDefaultCurrency](../interfaces/icart.md#getdefaultcurrency)*
 
-*Defined in [cart.ts:291](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L291)*
+*Defined in [cart.ts:291](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L291)*
 
 
 
@@ -520,7 +520,7 @@ ___
 
 *Implementation of [ICart](../interfaces/icart.md).[getDefaultUnitSystem](../interfaces/icart.md#getdefaultunitsystem)*
 
-*Defined in [cart.ts:327](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L327)*
+*Defined in [cart.ts:327](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L327)*
 
 
 
@@ -547,7 +547,7 @@ ___
 
 
 
-*Defined in [cart.ts:249](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L249)*
+*Defined in [cart.ts:249](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L249)*
 
 
 
@@ -584,7 +584,7 @@ ___
 
 *Implementation of [ICart](../interfaces/icart.md).[getVat](../interfaces/icart.md#getvat)*
 
-*Defined in [cart.ts:261](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L261)*
+*Defined in [cart.ts:261](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L261)*
 
 
 
@@ -613,7 +613,7 @@ ___
 
 *Implementation of [ICart](../interfaces/icart.md).[getWeight](../interfaces/icart.md#getweight)*
 
-*Defined in [cart.ts:299](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L299)*
+*Defined in [cart.ts:299](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L299)*
 
 
 
@@ -642,7 +642,7 @@ ___
 
 *Implementation of [ICart](../interfaces/icart.md).[getWeightUnitSystem](../interfaces/icart.md#getweightunitsystem)*
 
-*Defined in [cart.ts:309](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L309)*
+*Defined in [cart.ts:309](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L309)*
 
 
 
@@ -769,7 +769,7 @@ ___
 
 *Implementation of [ICart](../interfaces/icart.md).[removeItem](../interfaces/icart.md#removeitem)*
 
-*Defined in [cart.ts:203](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L203)*
+*Defined in [cart.ts:203](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L203)*
 
 
 
@@ -806,7 +806,7 @@ ___
 
 *Implementation of [ICart](../interfaces/icart.md).[setCurrency](../interfaces/icart.md#setcurrency)*
 
-*Defined in [cart.ts:282](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L282)*
+*Defined in [cart.ts:282](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L282)*
 
 
 
@@ -843,7 +843,7 @@ ___
 
 *Implementation of [ICart](../interfaces/icart.md).[setCurrencyConverter](../interfaces/icart.md#setcurrencyconverter)*
 
-*Defined in [cart.ts:239](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L239)*
+*Defined in [cart.ts:239](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L239)*
 
 
 
@@ -880,7 +880,7 @@ ___
 
 *Implementation of [ICart](../interfaces/icart.md).[setWeightUnitSystem](../interfaces/icart.md#setweightunitsystem)*
 
-*Defined in [cart.ts:318](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L318)*
+*Defined in [cart.ts:318](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L318)*
 
 
 
@@ -917,7 +917,7 @@ ___
 
 *Implementation of [ICart](../interfaces/icart.md).[updateItemQuantity](../interfaces/icart.md#updateitemquantity)*
 
-*Defined in [cart.ts:182](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L182)*
+*Defined in [cart.ts:182](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L182)*
 
 
 
@@ -953,7 +953,7 @@ ___
 
 
 
-*Defined in [cart.ts:358](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L358)*
+*Defined in [cart.ts:358](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L358)*
 
 
 
@@ -988,7 +988,7 @@ ___
 
 
 
-*Defined in [cart.ts:172](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L172)*
+*Defined in [cart.ts:172](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L172)*
 
 
 
@@ -1018,7 +1018,7 @@ ___
 
 
 
-*Defined in [cart.ts:370](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/cart.ts#L370)*
+*Defined in [cart.ts:375](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart.ts#L375)*
 
 
 

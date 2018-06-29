@@ -1,3 +1,7 @@
+## Version 1.0.11 (2018-06-29)
+### Enhancement
+* No conversion object is needed if only one currency is used.
+
 ## Version 1.0.10 (2018-06-29)
 ### Bug
 * Fixed the bug where the default weight was missing properties if the cart was loaded from JSON.

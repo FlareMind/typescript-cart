@@ -21,6 +21,11 @@ export class CurrencyConverter implements ICurrencyConverter {
      */
     convert(convertObject: IConvertObject): number | null {
 
+        // No conversion needed
+        if (convertObject.from.getCode() === convertObject.to.getCode()) {
+            return convertObject.amount;
+        }
+
         // Check that both currencies are given in the rates dict
         if ((!this.rates.hasOwnProperty(convertObject.from.getCode())
                 && this.base.getCode() !== convertObject.from.getCode())

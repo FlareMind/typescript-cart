@@ -12,7 +12,7 @@
 
 **●  defaultCurrency**:  *[ICurrency](icurrency.md)* 
 
-*Defined in [interfaces/cart-config.ts:13](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/cart-config.ts#L13)*
+*Defined in [interfaces/cart-config.ts:13](https://github.com/FlareMind/typescript-cart/blob/1125687/src/interfaces/cart-config.ts#L13)*
 
 
 
@@ -26,7 +26,7 @@ ___
 
 **●  defaultVat**:  *`undefined`⎮`number`* 
 
-*Defined in [interfaces/cart-config.ts:15](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/cart-config.ts#L15)*
+*Defined in [interfaces/cart-config.ts:15](https://github.com/FlareMind/typescript-cart/blob/1125687/src/interfaces/cart-config.ts#L15)*
 
 
 
@@ -40,7 +40,7 @@ ___
 
 **●  defaultWeightUnit**:  *[IWeightUnit](iweightunit.md)* 
 
-*Defined in [interfaces/cart-config.ts:14](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/cart-config.ts#L14)*
+*Defined in [interfaces/cart-config.ts:14](https://github.com/FlareMind/typescript-cart/blob/1125687/src/interfaces/cart-config.ts#L14)*
 
 
 
@@ -54,7 +54,7 @@ ___
 
 **●  stackAddedProducts**:  *`undefined`⎮`true`⎮`false`* 
 
-*Defined in [interfaces/cart-config.ts:17](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/cart-config.ts#L17)*
+*Defined in [interfaces/cart-config.ts:17](https://github.com/FlareMind/typescript-cart/blob/1125687/src/interfaces/cart-config.ts#L17)*
 
 
 
@@ -68,7 +68,7 @@ ___
 
 **●  vatInPrice**:  *`undefined`⎮`true`⎮`false`* 
 
-*Defined in [interfaces/cart-config.ts:16](https://github.com/FlareMind/typescript-cart/blob/a202c9e/src/interfaces/cart-config.ts#L16)*
+*Defined in [interfaces/cart-config.ts:16](https://github.com/FlareMind/typescript-cart/blob/1125687/src/interfaces/cart-config.ts#L16)*
 
 
 
