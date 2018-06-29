@@ -359,6 +359,11 @@ export class Cart extends Observable implements ICart {
         let decodedJson: any = JSON.parse(data);
 
         if (Cart.isExportedCart(decodedJson)) {
+
+            // Saved JSON can not store functions. Restore the correct currency class.
+            decodedJson.config.defaultCurrency = Currencies.identifyCurrency(decodedJson.config.defaultCurrency);
+            decodedJson.config.defaultWeightUnit = WeightUnits.identifyWeightUnit(decodedJson.config.defaultWeightUnit);
+
             let cart: ICart = new Cart((<IExportedCart> decodedJson).config);
             cart.addItem((<IExportedCart> decodedJson).products);
             return cart;
