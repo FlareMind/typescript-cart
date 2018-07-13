@@ -62,7 +62,7 @@
 
 **●  name**:  *`string`*  = "change"
 
-*Defined in [cart-events.ts:5](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart-events.ts#L5)*
+*Defined in [cart-events.ts:5](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/cart-events.ts#L5)*
 
 
 
@@ -75,7 +75,7 @@ ___
 
 **●  parent**:  *`null`*  =  null
 
-*Defined in [cart-events.ts:4](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart-events.ts#L4)*
+*Defined in [cart-events.ts:4](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/cart-events.ts#L4)*
 
 
 
@@ -94,7 +94,7 @@ ___
 
 **●  name**:  *`string`*  = "clear"
 
-*Defined in [cart-events.ts:10](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart-events.ts#L10)*
+*Defined in [cart-events.ts:10](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/cart-events.ts#L10)*
 
 
 
@@ -107,7 +107,7 @@ ___
 
 **●  parent**:  *`IObservableEvent`*  =  CART_CHANGE
 
-*Defined in [cart-events.ts:9](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart-events.ts#L9)*
+*Defined in [cart-events.ts:9](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/cart-events.ts#L9)*
 
 
 
@@ -126,7 +126,7 @@ ___
 
 **●  EUR**:  *[EUR](classes/eur.md)*  =  new EUR()
 
-*Defined in [currencies/currencies.ts:8](https://github.com/FlareMind/typescript-cart/blob/1125687/src/currencies/currencies.ts#L8)*
+*Defined in [currencies/currencies.ts:8](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/currencies/currencies.ts#L8)*
 
 
 
@@ -139,7 +139,7 @@ ___
 
 **●  GBP**:  *[GBP](classes/gbp.md)*  =  new GBP()
 
-*Defined in [currencies/currencies.ts:9](https://github.com/FlareMind/typescript-cart/blob/1125687/src/currencies/currencies.ts#L9)*
+*Defined in [currencies/currencies.ts:9](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/currencies/currencies.ts#L9)*
 
 
 
@@ -152,7 +152,7 @@ ___
 
 **●  SEK**:  *[SEK](classes/sek.md)*  =  new SEK()
 
-*Defined in [currencies/currencies.ts:10](https://github.com/FlareMind/typescript-cart/blob/1125687/src/currencies/currencies.ts#L10)*
+*Defined in [currencies/currencies.ts:10](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/currencies/currencies.ts#L10)*
 
 
 
@@ -165,7 +165,7 @@ ___
 
 **●  USD**:  *[USD](classes/usd.md)*  =  new USD()
 
-*Defined in [currencies/currencies.ts:11](https://github.com/FlareMind/typescript-cart/blob/1125687/src/currencies/currencies.ts#L11)*
+*Defined in [currencies/currencies.ts:11](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/currencies/currencies.ts#L11)*
 
 
 
@@ -180,7 +180,7 @@ ___
 
 
 
-*Defined in [currencies/currencies.ts:12](https://github.com/FlareMind/typescript-cart/blob/1125687/src/currencies/currencies.ts#L12)*
+*Defined in [currencies/currencies.ts:12](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/currencies/currencies.ts#L12)*
 
 
 
@@ -213,7 +213,7 @@ ___
 
 **●  name**:  *`string`*  = "add"
 
-*Defined in [cart-events.ts:15](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart-events.ts#L15)*
+*Defined in [cart-events.ts:15](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/cart-events.ts#L15)*
 
 
 
@@ -226,7 +226,7 @@ ___
 
 **●  parent**:  *`IObservableEvent`*  =  CART_CHANGE
 
-*Defined in [cart-events.ts:14](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart-events.ts#L14)*
+*Defined in [cart-events.ts:14](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/cart-events.ts#L14)*
 
 
 
@@ -245,7 +245,7 @@ ___
 
 **●  name**:  *`string`*  = "quantity-changed"
 
-*Defined in [cart-events.ts:25](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart-events.ts#L25)*
+*Defined in [cart-events.ts:25](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/cart-events.ts#L25)*
 
 
 
@@ -258,7 +258,7 @@ ___
 
 **●  parent**:  *`IObservableEvent`*  =  CART_CHANGE
 
-*Defined in [cart-events.ts:24](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart-events.ts#L24)*
+*Defined in [cart-events.ts:24](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/cart-events.ts#L24)*
 
 
 
@@ -277,7 +277,7 @@ ___
 
 **●  name**:  *`string`*  = "remove"
 
-*Defined in [cart-events.ts:20](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart-events.ts#L20)*
+*Defined in [cart-events.ts:20](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/cart-events.ts#L20)*
 
 
 
@@ -290,7 +290,7 @@ ___
 
 **●  parent**:  *`IObservableEvent`*  =  CART_CHANGE
 
-*Defined in [cart-events.ts:19](https://github.com/FlareMind/typescript-cart/blob/1125687/src/cart-events.ts#L19)*
+*Defined in [cart-events.ts:19](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/cart-events.ts#L19)*
 
 
 
@@ -309,7 +309,7 @@ ___
 
 **●  name**:  *`string`*  = "delete"
 
-*Defined in [product-events.ts:5](https://github.com/FlareMind/typescript-cart/blob/1125687/src/product-events.ts#L5)*
+*Defined in [product-events.ts:5](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/product-events.ts#L5)*
 
 
 
@@ -322,7 +322,7 @@ ___
 
 **●  parent**:  *`null`*  =  null
 
-*Defined in [product-events.ts:4](https://github.com/FlareMind/typescript-cart/blob/1125687/src/product-events.ts#L4)*
+*Defined in [product-events.ts:4](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/product-events.ts#L4)*
 
 
 
@@ -341,7 +341,7 @@ ___
 
 **●  GRAM**:  *[Gram](classes/gram.md)*  =  new Gram()
 
-*Defined in [weight-units/weight-units.ts:8](https://github.com/FlareMind/typescript-cart/blob/1125687/src/weight-units/weight-units.ts#L8)*
+*Defined in [weight-units/weight-units.ts:8](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/weight-units/weight-units.ts#L8)*
 
 
 
@@ -354,7 +354,7 @@ ___
 
 **●  KILOGRAM**:  *[Kilogram](classes/kilogram.md)*  =  new Kilogram()
 
-*Defined in [weight-units/weight-units.ts:7](https://github.com/FlareMind/typescript-cart/blob/1125687/src/weight-units/weight-units.ts#L7)*
+*Defined in [weight-units/weight-units.ts:7](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/weight-units/weight-units.ts#L7)*
 
 
 
@@ -367,7 +367,7 @@ ___
 
 **●  POUND**:  *[Pound](classes/pound.md)*  =  new Pound()
 
-*Defined in [weight-units/weight-units.ts:9](https://github.com/FlareMind/typescript-cart/blob/1125687/src/weight-units/weight-units.ts#L9)*
+*Defined in [weight-units/weight-units.ts:9](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/weight-units/weight-units.ts#L9)*
 
 
 
@@ -382,7 +382,7 @@ ___
 
 
 
-*Defined in [weight-units/weight-units.ts:10](https://github.com/FlareMind/typescript-cart/blob/1125687/src/weight-units/weight-units.ts#L10)*
+*Defined in [weight-units/weight-units.ts:10](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/weight-units/weight-units.ts#L10)*
 
 
 

@@ -74,6 +74,10 @@ export class Product extends Observable implements IProduct {
      * @returns {IProduct} Chaining this
      */
     setQuantity(quantity: number, add = false): IProduct {
+
+        // Make sure that quantity is a number
+        quantity = Number(quantity);
+
         if (add) {
             this.getData().quantity += quantity;
             return this;

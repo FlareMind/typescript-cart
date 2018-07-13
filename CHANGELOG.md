@@ -1,3 +1,7 @@
+## Version 1.0.12 (2018-07-13)
+### Enhancement
+* Made sure that all quantities are numbers.
+
 ## Version 1.0.11 (2018-06-29)
 ### Enhancement
 * No conversion object is needed if only one currency is used.

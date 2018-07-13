@@ -35,7 +35,7 @@
 ### ⊕ **new CurrencyConverter**(rates: *`any`*, base?: *[ICurrency](../interfaces/icurrency.md)*): [CurrencyConverter](currencyconverter.md)
 
 
-*Defined in [currency-converter.ts:8](https://github.com/FlareMind/typescript-cart/blob/1125687/src/currency-converter.ts#L8)*
+*Defined in [currency-converter.ts:8](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/currency-converter.ts#L8)*
 
 
 
@@ -62,7 +62,7 @@
 
 **●  base**:  *[ICurrency](../interfaces/icurrency.md)* 
 
-*Defined in [currency-converter.ts:8](https://github.com/FlareMind/typescript-cart/blob/1125687/src/currency-converter.ts#L8)*
+*Defined in [currency-converter.ts:8](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/currency-converter.ts#L8)*
 
 
 
@@ -76,7 +76,7 @@ ___
 
 **●  rates**:  *`any`* 
 
-*Defined in [currency-converter.ts:7](https://github.com/FlareMind/typescript-cart/blob/1125687/src/currency-converter.ts#L7)*
+*Defined in [currency-converter.ts:7](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/currency-converter.ts#L7)*
 
 
 
@@ -96,7 +96,7 @@ ___
 
 *Implementation of [ICurrencyConverter](../interfaces/icurrencyconverter.md).[convert](../interfaces/icurrencyconverter.md#convert)*
 
-*Defined in [currency-converter.ts:22](https://github.com/FlareMind/typescript-cart/blob/1125687/src/currency-converter.ts#L22)*
+*Defined in [currency-converter.ts:22](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/currency-converter.ts#L22)*
 
 
 

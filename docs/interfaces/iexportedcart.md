@@ -12,7 +12,7 @@
 
 **●  config**:  *[ICartConfig](icartconfig.md)* 
 
-*Defined in [interfaces/cart.ts:52](https://github.com/FlareMind/typescript-cart/blob/1125687/src/interfaces/cart.ts#L52)*
+*Defined in [interfaces/cart.ts:52](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/interfaces/cart.ts#L52)*
 
 
 
@@ -26,7 +26,7 @@ ___
 
 **●  products**:  *[IAddProduct](iaddproduct.md)[]* 
 
-*Defined in [interfaces/cart.ts:53](https://github.com/FlareMind/typescript-cart/blob/1125687/src/interfaces/cart.ts#L53)*
+*Defined in [interfaces/cart.ts:53](https://github.com/FlareMind/typescript-cart/blob/b9c0f4d/src/interfaces/cart.ts#L53)*
 
 
 
